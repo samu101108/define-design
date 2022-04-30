@@ -1,0 +1,29 @@
+
+                            
+/* TEAM */
+
+Designer: Tiago Araújo.
+Site: https://www.behance.net/tiagoaraujo-design
+Instagram: @tiago.designweb
+Location: Recife, Brasil.
+
+Front-end: Samuel Barbosa.
+Site: https://www.linkedin.com/in/samu101108/
+Twitter: @samu101108
+Location: Jaboatão dos Guararapes, Brasil.
+						
+Front-end: Wanderson Silva.
+Site: https://www.linkedin.com/in/wanderson-silva-50b27078/
+Location: Recife, Brasil.
+						
+						
+
+							
+/* SITE */
+
+                            
+Last update: 2022/04/30 
+                            
+Standards: HTML5, CSS3, PHP, Twig.
+Components: Bootstrap, jQuery, Slick.js.
+Software: Built with [Timber](http://upstatement.com/timber) by Upstatement
