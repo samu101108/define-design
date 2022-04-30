@@ -1,0 +1,13 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		{% for produto in produtos %}
+			{{produto.title}} <br>
+			<img src="{{produto.thumbnail }}" style="width: 200px;" alt=""> <br>
+			{{produto.content}}
+			<a href="{{ post.link }}">{{produto.title}}</a> <br>
+		{% endfor %}
+		Estou no template produtos
+	</div><!-- /content-wrapper -->
+{% endblock %}
