@@ -1,16 +1,22 @@
 
 <header class="header" id="header">
   {% block header %}
-    <div class="header__wrapper">
-      <a href="{{ site.url }}" class="header__wrapper-logo">
-        <figure class="logo-image">
-          <img src="{{ site.theme.link | relative }}/static/" alt="{{ site.name }}" />
+    <div class="header__wrapper d-flex align-items-center justify-content-between">
+      <a href="{{ site.url }}" class="logo d-block">
+        <figure class="logo-image h-100 m-0">
+          <img src="{{ site.theme.link | relative }}/static/images/define-logo.svg" alt="{{ site.name }}" class="h-100" />
         </figure>
       </a>
 
-      <nav id="nav-main" class="nav-main" role="navigation">
+      <nav id="nav-main" class="navbar p-0 m-0" role="navigation">
         {% include "menu.twig" with {'items': menu.get_items} %}
       </nav>
+
+      <span class="hamburger d-flex flex-column align-items-center justify-content-center position-relative" id="hamburger">
+        <span class="d-block position-absolute"></span>
+        <span class="d-block"></span>
+        <span class="d-block position-absolute"></span>
+      </span>
     </div>
   {% endblock %}
 </header>
