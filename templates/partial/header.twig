@@ -1,0 +1,16 @@
+
+<header class="header" id="header">
+  {% block header %}
+    <div class="header__wrapper">
+      <a href="{{ site.url }}" class="header__wrapper-logo">
+        <figure class="logo-image">
+          <img src="{{ site.theme.link | relative }}/static/" alt="{{ site.name }}" />
+        </figure>
+      </a>
+
+      <nav id="nav-main" class="nav-main" role="navigation">
+        {% include "menu.twig" with {'items': menu.get_items} %}
+      </nav>
+    </div>
+  {% endblock %}
+</header>
