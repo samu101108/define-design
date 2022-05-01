@@ -1,4 +1,4 @@
 
 header.header {
-  height: var(--header-height);
+  @include sizedBox(100%, var(--header-height));
 }

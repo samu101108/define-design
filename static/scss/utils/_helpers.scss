@@ -1,0 +1,19 @@
+
+@mixin contentLimit ($maximum: 1366px) {
+  padding: 0;
+  margin: 0 auto;
+  max-width: $maximum;
+
+  --xPadding: 12px;
+
+  @media (max-width: calc(#{$maximum} + (12px * 2) - 1px)) {
+    padding: 0 var(--xPadding);
+
+    @content;
+  }
+}
+
+@mixin sizedBox ($width: 10px, $height: $width) {
+  width: $width;
+  height: $height;
+}
