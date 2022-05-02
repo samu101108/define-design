@@ -1,0 +1,16 @@
+.single .wrapper .content-wrapper{
+    @include contentLimit(1180px);
+    --xPadding: 15px;
+    border: 1px solid orange;
+    img {
+        @include sizedBox(100%, auto);
+        border: 1px solid orangered;
+    }
+    .featured-img {
+        float: left;
+        max-width: 547px;
+    }
+    .article-h1 {
+        float: right;
+    }
+}

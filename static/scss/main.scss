@@ -3,7 +3,8 @@
 @import
   "utils/reset",
   "utils/helpers",
-  "utils/variables.scss";
+  "utils/variables",
+  "utils/tipography.scss";
 
 // partials files
 @import "partials/header";
@@ -12,4 +13,5 @@
 @import
   "page/blog",
   "page/homepage",
-  "page/produtos";
+  "page/produtos",
+  "page/single";
