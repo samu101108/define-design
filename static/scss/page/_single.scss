@@ -1,0 +1,32 @@
+.single .wrapper .content-wrapper{
+    @include contentLimit(1180px);
+    --xPadding: 15px;
+    border: 1px solid orange;
+    img {
+        @include sizedBox(100%, auto);
+        border: 1px solid orangered;
+    }
+    .featured-img {
+        float: left;
+        width: 547px;
+        height: 547px;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+    .article-h1 {
+        float: right;
+        max-width: 590px;
+    }
+    .blog-author {
+        // float: right;
+    }
+    .article-body {
+        clear: right;
+        // max-width: 700px;
+    }
+}
