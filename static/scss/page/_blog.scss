@@ -1,0 +1,22 @@
+.blog {
+    time {
+        font-size: 12px;
+    }
+    .thumb-deco {
+        position: relative;
+    }
+    .container .tease-post:nth-child(even) span:after {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 234px;
+        display: block;
+        border: 1px solid #000;
+        bottom: -55px;
+        left: 60px;
+        z-index: -1;
+    }
+    // .container .tease-post:nth-child(even) span:after {
+    //     border: 5px solid #ff0000 !important;
+    // }
+}
