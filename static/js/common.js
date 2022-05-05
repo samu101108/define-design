@@ -1,5 +1,6 @@
 (function () {
 
+  const body   = $('body');
   const header = $('header');
 
   function isMenuVisible () {
@@ -7,7 +8,7 @@
   }
 
   function toggleMenuVisibility () {
-    header.toggleClass('opened-menu');
+    header.toggleClass('menu--opened');
   }
 
   function hasContext (selector, selector) {
