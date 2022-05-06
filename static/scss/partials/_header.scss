@@ -13,7 +13,12 @@
     }
 
     .navbar {
-      @include sizedBox(100vw, 100vh);
+      a {
+        color: var(--black);
+        text-decoration: none;
+        text-transform: uppercase;
+        font: 700 1.125rem / 1.5rem "Manrope", sans-serif;
+      }
     }
 
     .hamburger {
@@ -58,18 +63,36 @@
     .navbar {
       z-index: 20;
 
-      left: 100vw;
-      top: var(--header-height);
-      position: fixed;
+      top: 0;
+      right: calc(var(--side-menu-gap) * -1);
+      position: absolute;
+      transition: right .4s ease-in-out;
 
-      transition: all .4s ease;
       background-color: #fff;
-      @include sizedBox(100vw, calc(100vh - var(--header-height)));
+      @include sizedBox(var(--side-menu-gap), 100vh);
+
+      > ul {
+        padding: 36px 0;
+
+        li {
+          + li {
+            margin: 20px 0 0;
+          }
+
+          a {
+            padding: 4px 12px;
+          }
+        }
+      }
     }
 
-    &.opened-menu {
+    &:not(.menu--opened) .header__wrapper {
+      overflow: hidden;
+    }
+
+    &.menu--opened {
       .navbar {
-        transform: translateX(-100%);
+        right: 0;
       }
 
       .hamburger {

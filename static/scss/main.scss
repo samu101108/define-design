@@ -1,9 +1,10 @@
 
 // util files
 @import
+  "utils/variables",
   "utils/reset",
   "utils/helpers",
-  "utils/variables.scss";
+  "utils/globals";
 
 // partials files
 @import "partials/header";
