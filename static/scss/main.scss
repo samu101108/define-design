@@ -4,7 +4,8 @@
   "utils/variables",
   "utils/reset",
   "utils/helpers",
-  "utils/globals";
+  "utils/globals",
+  "utils/tipography.scss";
 
 // partials files
 @import "partials/header";
@@ -13,7 +14,8 @@
 @import
   "page/blog",
   "page/homepage",
-  "page/produtos";
+  "page/produtos",
+  "page/single";
 
 
 html {
