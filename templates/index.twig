@@ -2,14 +2,18 @@
 
 {% block content %}
 	<div class="container">
-		<div class="row">
-			<div class="col-8 col-md-5 col-lg-4">
-				<h1 class="text-uppercase fs-1 mb-5">Nossas Novidades</h1>
+		<div class="section-container">
+			<div class="row">
+				<div class="col-8 col-md-5 col-lg-4">
+					<h1 class="text-uppercase fs-1 mb-5">Nossas Novidades</h1>
+				</div>
+			</div>
+			<div class="row">
+				{% for post in posts %}
+					{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+				{% endfor %}
 			</div>
 		</div>
-		{% for post in posts %}
-			{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-		{% endfor %}
 	</div>
 	
 	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}

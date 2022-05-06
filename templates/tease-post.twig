@@ -2,13 +2,13 @@
 
 {% block content %}
 	<div class="d-flex flex-column-reverse">
-		<h2 class="h2 mt-4"><a class="text-decoration-none" href="{{post.link}}">{{post.title}}</a></h2>
-		<p><time pubdate>{{post.date}}</time></p>
+		<h2 class="h2 pt-0 pt-md-2 pb-4 fs-6"><a class="text-decoration-none" href="{{post.link}}">{{post.title}}</a></h2>
+		<p class="mb-md-0"><time pubdate>{{post.date}}</time></p>
 		{% if post.thumbnail.src %}
-			<div class="w-75 mx-auto thumb-deco">
-				<span>
-					<img class="w-100 img-fluid" src="{{post.thumbnail.src}}" />
-				</span>
+			<div class="thumb-deco mx-auto w-100">
+				<figure class="mb-3">
+					<img class="w-100" width="547" height="547" src="{{post.thumbnail.src}}" />
+				</figure>
 			</div>
 		{% endif %}
 	</div>
