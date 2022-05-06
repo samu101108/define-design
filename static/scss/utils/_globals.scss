@@ -1,4 +1,13 @@
 
 html {
+}
+body {
+    font-family: Manrope, sans-serif;
+}
+.section-container {
+    max-width: 1180px;
+}
 
+a:active {
+    color: var(--purple);
 }
