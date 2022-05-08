@@ -76,13 +76,21 @@
 
 					<section class="depoimentos py-5">
 						<div class="section-container mx-auto">
-							<h2 class="display-2 fw-ligther">O QUE FALAM DA GENTE</h2>
-							{% for depoimento in depoimentos %}
-								<div class="mb-5 border border-dark">
-									{{ depoimento.title }} <br>
-									{{ depoimento.content }}
-								</div>
-							{% endfor %}
+							<h2 class="display-2 fw-ligther pb-4 mb-2	">O QUE FALAM DA GENTE</h2>
+							<div class="slides-depoimento">
+								{% for depoimento in depoimentos %}
+									<div class="slide-depoimento mt-md-5">
+										<div class="slide-conteudo border mb-5 p-4 mx-auto">
+											<p class="pb-5 mb-3 fw-lighter">{{ depoimento.depoimento }}</p>
+											<div class="pessoa">
+												<span class="nome fw-bold">{{ depoimento.nome }}</span> - 
+												<span class="profissao fw-bold">{{ depoimento.profissao }}</span> <br>
+												<span class="empresa text-uppercase fw-bold">{{ depoimento.empresa }}</span>
+											</div>
+										</div>
+									</div>
+								{% endfor %}
+							</div>
 						</div>
 					</section>
 

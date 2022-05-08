@@ -24,5 +24,4 @@ $context['depoimentos'] = new Timber\PostQuery($args);
 
 $timber_post     = new Timber\Post();
 $context['post'] = $timber_post;
-$context['depoimento'] = $timber_post;
 Timber::render( array( 'page-' . $timber_post->post_name . '.twig', 'homepage.twig' ), $context );
