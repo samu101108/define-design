@@ -14,7 +14,6 @@ section.depoimentos  {
     font-size: 1.8rem;
     background-color: #ededed;
     margin-top: 44px;
-    margin-bottom: 44px;
     .slides-depoimento {
         .slide-depoimento .slide-conteudo {
             border-radius: 17px;
@@ -50,7 +49,20 @@ section.depoimentos  {
     }
     
 }
-
+section.marcas  { 
+    font-size: 1.8rem;
+    background-color: #ededed;
+    padding-bottom: 44px;
+    .slides-marca {
+        overflow: scroll;
+        >figure {
+            min-width: 222px;
+            margin-right: 68px;
+            .marca-img {
+            }
+        }
+    }
+}
 section.novidades { 
     font-size: 1.8rem;
     .novidades-posts {

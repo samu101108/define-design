@@ -76,7 +76,7 @@
 
 					<section class="depoimentos py-5">
 						<div class="section-container mx-auto">
-							<h2 class="display-2 fw-ligther pb-4 mb-2	">O QUE FALAM DA GENTE</h2>
+							<h2 class="display-2 fw-ligther pb-4 mb-2 text-md-center">O QUE FALAM DA GENTE</h2>
 							<div class="slides-depoimento">
 								{% for depoimento in depoimentos %}
 									<div class="slide-depoimento mt-md-5">
@@ -89,6 +89,19 @@
 											</div>
 										</div>
 									</div>
+								{% endfor %}
+							</div>
+						</div>
+					</section>
+
+					<section class="marcas">
+						<div class="section-container mx-auto">
+							<h2 class="display-2 fw-ligther pb-4 mb-2 text-md-center">MARCAS PARCEIRAS</h2>
+							<div class="slides-marca d-flex align-items-center">
+								{% for marca in marcas %}
+									<figure class="mb-5">
+										<img class="img-fluid marca-img" src="{{ marca.thumbnail.src }}" alt="{{marca.title}}" title="{{marca.title}}">
+									</figure>
 								{% endfor %}
 							</div>
 						</div>
