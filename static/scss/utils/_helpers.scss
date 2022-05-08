@@ -4,9 +4,9 @@
   margin: 0 auto;
   max-width: $maximum;
 
-  --xPadding: 12px;
+  --xPadding: 15px;
 
-  @media (max-width: calc(#{$maximum} + (12px * 2) - 1px)) {
+  @media (max-width: calc(#{$maximum} + (15px * 2) - 1px)) {
     padding: 0 var(--xPadding);
 
     @content;

@@ -9,24 +9,88 @@
 					{{post.content}}
 					Estou no template homepage
 
+					
+					<section class="pessoas py-5">
+						<div class="section-container mx-auto p-0">
+							<h2 class="display-2 fw-bold">SOMOS FEITOS <br>DE PESSOAS</h2>
+							<div class="row g-0">
+								<div class="col-md-6">
+									<figure class="mb-4 mb-md-0">
+										<img class="img-fluid" src="{{site.link}}/wp-content/uploads/2022/05/pessoas1.jpg" alt="">
+									</figure>
+								</div>
+								<div class="col-md-6 px-4">
+									<p><strong>Somos uma empresa que nasceu da inovação.</strong></p>
+									<p>Desenvolvemos, criamos e produzimos peças emborrachadas personalizadas, com alta qualidade e precisão desde os mínimos detalhes.</p>
+									<p>Sabemos a importância e a responsabilidade de levar a marca do cliente em nossos produtos e, por isso, trabalhamos com uma equipe especializada e comprometida que mantém nossa essência de realizar um trabalho primoroso de pessoas para pessoas.</p>
+									<p>Por isso mantemos nossa essência de realizar um trabalho primoroso de pessoas para pessoas.</p>
+								</div>
+							</div>
+							<div class="row g-0">
+								<div class="col-md-6">
+									<figure class="mb-4 mb-md-0">
+										<img class="img-fluid" src="{{site.link}}/wp-content/uploads/2022/05/pessoas2.jpg" alt="">
+									</figure>
+								</div>
+								<div class="col-md-6 order-md-first text-md-end px-4">
+									<p>Contamos com uma estrutura verticalizada, possibilitando a busca constante por novas soluções, recriando processos e garantindo padrões de qualidade exigentes de grandes marcas do país.</p>
+									<p>E assim seguimos conquistando novos espaços e nos permitindo inovar ultrapassando os nossos próprios limites para transformar um pedido em case de sucesso.</p>
+									<p>Na Define suas ideias ganham formas. Descubra a sua!</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="qualidades py-5">
+						<div class="section-container mx-auto">
+						<hr class="w-75 w-md-50 mx-auto mb-5">
+						<h2 class="display-4 fw-lighter text-uppercase text-center mb-5">Só a Define Design tem</h2>
+						<ul class="lista-qualidades p-0">
+							<li class="d-flex flex-column">
+								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-entrega.svg" alt=""></figure>
+								<p class="small text-center lh-sm">Entrega para <br>todo Brasil</p>
+							</li>
+							<li class="d-flex flex-column">
+								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-camisa.svg" alt=""></figure>
+								<p class="small text-center lh-sm">Produtos com alta personalização</p>
+							</li>
+							<li class="d-flex flex-column">
+								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-lampada.svg" alt=""></figure>
+								<p class="small text-center lh-sm">Criatividade e tendência de mercado</p>
+							</li>
+							<li class="d-flex flex-column">
+								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-tag.svg" alt=""></figure>
+								<p class="small text-center lh-sm">Amostra grátis para avaliação</p>
+							</li>
+							<li class="d-flex flex-column">
+								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-precisao.svg" alt=""></figure>
+								<p class="small text-center lh-sm">Perfeccionismo e precisão no acabamento</p>
+							</li>
+							<li class="d-flex flex-column">
+								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-reciclagem.svg" alt=""></figure>
+								<p class="small text-center lh-sm">Conscientização e sustentabilidade</p>
+							</li>
+						</ul>
+						</div>
+					</section>
+
 					<section class="novidades py-5">
 						<div class="section-container mx-auto">
-								<h2 class="display-2 fw-bold">NOVIDADES DEFINE</h2>
-								<p class="pb-3">Acompanhe as novidades, tendências, <br>lançamentos e tudo sobre o mercado</p>
-								<div class="novidades-posts row pt-3 pb-4">
-								{% for post in posts %}
-									<div class="col-md-6">
-										<a class="d-block post-link text-decoration-none" href="{{post.link}}">
-											<h3 class="post-title text-white fw-normal text-end p-4 mb-0">{{ post.title }}</h3>
-											<img class="post-thumb" src="{{ post.thumbnail.src | resize(300, 300)}}">
-										</a>
-									</div>
-								{% endfor %}
+							<h2 class="display-2 fw-bold">NOVIDADES DEFINE</h2>
+							<p class="pb-3">Acompanhe as novidades, tendências, <br>lançamentos e tudo sobre o mercado</p>
+							<div class="novidades-posts row pt-3 pb-4">
+							{% for post in posts %}
+								<div class="col-md-6">
+									<a class="d-block post-link text-decoration-none" href="{{post.link}}">
+										<h3 class="post-title text-white fw-normal text-end p-4 mb-0">{{ post.title }}</h3>
+										<img class="post-thumb" src="{{ post.thumbnail.src | resize(300, 300)}}">
+									</a>
 								</div>
-								<div class="text-center mt-4">
-									<a  class="btn btn-outline-dark" href="/blog">VER TODAS AS NOVIDADES</a>
-								</div>
-						
+							{% endfor %}
+							</div>
+							<div class="text-center mt-4">
+								<a  class="btn btn-outline-dark" href="/blog">VER TODAS AS NOVIDADES</a>
+							</div>
 						</div>
 					</section>
 
