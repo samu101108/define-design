@@ -9,6 +9,7 @@
 
 // partials files
 @import "partials/header";
+@import "partials/footer";
 
 // pages files
 @import
@@ -16,8 +17,3 @@
   "page/homepage",
   "page/produtos",
   "page/single";
-
-
-html {
-  font-size: 18px;
-}

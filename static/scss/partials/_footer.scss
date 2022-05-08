@@ -1,0 +1,40 @@
+ .footer {
+     .footer-top {
+        background-color: #000;
+        .figura-top{
+            width: 200px;
+        }
+        ul{
+            padding-bottom: 64px;
+        }
+        .links-contato{
+            padding-bottom: 65px;
+            width: 290px;
+        }
+     }
+     
+    .footer-middle{
+        width: 320px;
+    }
+
+    .footer-bottom {
+        .agencia{
+            width: 95px;
+        }
+     }
+
+     @media(min-width: 768px) {
+        .footer-top {
+            .links-contato {
+             width: initial;
+            }
+        }
+
+         .footer-middle{
+            width: initial;
+            .cnpj {
+                font-size: 13px;
+            }
+         }
+     }
+ }
