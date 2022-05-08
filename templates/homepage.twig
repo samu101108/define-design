@@ -17,7 +17,7 @@
 								{% for post in posts %}
 									<div class="col-md-6">
 										<a class="d-block post-link text-decoration-none" href="{{post.link}}">
-											<h3 class="post-title text-white text-end p-4 mb-0">{{ post.title }}</h3>
+											<h3 class="post-title text-white fw-normal text-end p-4 mb-0">{{ post.title }}</h3>
 											<img class="post-thumb" src="{{ post.thumbnail.src | resize(300, 300)}}">
 										</a>
 									</div>
