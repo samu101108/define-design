@@ -43,34 +43,46 @@
 
 					<section class="qualidades py-5">
 						<div class="section-container mx-auto">
-						<hr class="w-75 w-md-50 mx-auto mb-5">
-						<h2 class="display-4 fw-lighter text-uppercase text-center mb-5">Só a Define Design tem</h2>
-						<ul class="lista-qualidades p-0">
-							<li class="d-flex flex-column">
-								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-entrega.svg" alt=""></figure>
-								<p class="small text-center lh-sm">Entrega para <br>todo Brasil</p>
-							</li>
-							<li class="d-flex flex-column">
-								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-camisa.svg" alt=""></figure>
-								<p class="small text-center lh-sm">Produtos com alta personalização</p>
-							</li>
-							<li class="d-flex flex-column">
-								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-lampada.svg" alt=""></figure>
-								<p class="small text-center lh-sm">Criatividade e tendência de mercado</p>
-							</li>
-							<li class="d-flex flex-column">
-								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-tag.svg" alt=""></figure>
-								<p class="small text-center lh-sm">Amostra grátis para avaliação</p>
-							</li>
-							<li class="d-flex flex-column">
-								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-precisao.svg" alt=""></figure>
-								<p class="small text-center lh-sm">Perfeccionismo e precisão no acabamento</p>
-							</li>
-							<li class="d-flex flex-column">
-								<figure class="text-center"><img src="{{theme.link}}/static/images/icon-reciclagem.svg" alt=""></figure>
-								<p class="small text-center lh-sm">Conscientização e sustentabilidade</p>
-							</li>
-						</ul>
+							<hr class="w-75 w-md-50 mx-auto mb-5">
+							<h2 class="display-4 fw-lighter text-uppercase text-center mb-5">Só a Define Design tem</h2>
+							<ul class="lista-qualidades p-0">
+								<li class="d-flex flex-column">
+									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-entrega.svg" alt=""></figure>
+									<p class="small text-center lh-sm">Entrega para <br>todo Brasil</p>
+								</li>
+								<li class="d-flex flex-column">
+									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-camisa.svg" alt=""></figure>
+									<p class="small text-center lh-sm">Produtos com alta personalização</p>
+								</li>
+								<li class="d-flex flex-column">
+									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-lampada.svg" alt=""></figure>
+									<p class="small text-center lh-sm">Criatividade e tendência de mercado</p>
+								</li>
+								<li class="d-flex flex-column">
+									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-tag.svg" alt=""></figure>
+									<p class="small text-center lh-sm">Amostra grátis para avaliação</p>
+								</li>
+								<li class="d-flex flex-column">
+									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-precisao.svg" alt=""></figure>
+									<p class="small text-center lh-sm">Perfeccionismo e precisão no acabamento</p>
+								</li>
+								<li class="d-flex flex-column">
+									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-reciclagem.svg" alt=""></figure>
+									<p class="small text-center lh-sm">Conscientização e sustentabilidade</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="depoimentos py-5">
+						<div class="section-container mx-auto">
+							<h2 class="display-2 fw-ligther">O QUE FALAM DA GENTE</h2>
+							{% for depoimento in depoimentos %}
+								<div class="mb-5 border border-dark">
+									{{ depoimento.title }} <br>
+									{{ depoimento.content }}
+								</div>
+							{% endfor %}
 						</div>
 					</section>
 
