@@ -1,8 +1,11 @@
 section.faq {
+    font-size: 1.8rem;
     background-color: #EDEDED;
-
+    
+    .accordion-button { padding-left: 0; }
     .accordion-button,
     .accordion-item {
+        font-size: 1.8rem;
         background-color: transparent;
     }
     .accordion-button:not(.collapsed) {
