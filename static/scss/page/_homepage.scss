@@ -1,3 +1,31 @@
+section.novidades { 
+    font-size: 1.8rem;
+    .novidades-posts {
+        background-image: url(../images/shape-novidades.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+    }
+    .post-link {
+        position: relative;
+        margin-bottom: 20px;
+        .post-title {
+            font-size: 1.8rem;
+            background-color: rgba(0,0,0,0.42);
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+        }
+        .post-thumb {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    a {
+        font-size: 1.8rem;
+    }
+}
 section.apresentacao {
     a {
         font-size: 1.8rem;
@@ -24,5 +52,11 @@ section.faq {
     }
     .accordion-button:not(.collapsed)::after {
         filter: hue-rotate(45deg);
+    }
+}
+
+@media(min-width: 768px) {
+    section.novidades .novidades-posts {
+        background: none;
     }
 }

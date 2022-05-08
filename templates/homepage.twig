@@ -9,6 +9,27 @@
 					{{post.content}}
 					Estou no template homepage
 
+					<section class="novidades py-5">
+						<div class="section-container mx-auto">
+								<h2 class="display-2 fw-bold">NOVIDADES DEFINE</h2>
+								<p class="pb-3">Acompanhe as novidades, tendências, <br>lançamentos e tudo sobre o mercado</p>
+								<div class="novidades-posts row pt-3 pb-4">
+								{% for post in posts %}
+									<div class="col-md-6">
+										<a class="d-block post-link text-decoration-none" href="{{post.link}}">
+											<h3 class="post-title text-white text-end p-4 mb-0">{{ post.title }}</h3>
+											<img class="post-thumb" src="{{ post.thumbnail.src | resize(300, 300)}}">
+										</a>
+									</div>
+								{% endfor %}
+								</div>
+								<div class="text-center mt-4">
+									<a  class="btn btn-outline-dark" href="/blog">VER TODAS AS NOVIDADES</a>
+								</div>
+						
+						</div>
+					</section>
+
 					<section class="apresentacao py-5">
 						<div class="section-container mx-auto">
 							<div class="row g-0 text-center align-items-md-center">
