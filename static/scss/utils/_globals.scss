@@ -1,12 +1,19 @@
 // Tipografia (by https://type-scale.com/)
-html {font-size: 112.5%;} /*18px*/
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
 
 body {
-  //background: white;
-  font-family: 'Manrope', sans-serif;
+  color: #000;
   font-weight: 400;
   line-height: 1.75;
-  color: #000000;
+  font-family: 'Manrope', sans-serif;
+
+  @media (max-width: 767px) {
+    &.no-scroll {
+      overflow: hidden;
+    }
+  }
 }
 
 // p {margin-bottom: 1rem;}
@@ -36,7 +43,9 @@ body {
 // end - Tipografia (by https://type-scale.com/)
 
 .section-container {
-    max-width: 1180px;
+  // max-width: 1180px;
+  @include contentLimit(1180px);
+  // lembrando que temos um mixin pra fazer isso sozinho, tá?
 }
 
 a:active {

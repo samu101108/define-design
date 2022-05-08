@@ -3,6 +3,7 @@
   @include sizedBox(100%, var(--header-height));
 
   &__wrapper {
+    z-index: 1;
     @include sizedBox(100%);
     @include contentLimit(1094px);
 
@@ -13,11 +14,13 @@
     }
 
     .navbar {
+      z-index: 20;
+
       a {
         color: var(--black);
         text-decoration: none;
         text-transform: uppercase;
-        font: 700 1.125rem / 1.5rem "Manrope", sans-serif;
+        font: 700 1.8rem / 2.4rem "Manrope", sans-serif;
       }
     }
 
@@ -61,8 +64,6 @@
 
   @media (max-width: 767px) {
     .navbar {
-      z-index: 20;
-
       top: 0;
       right: calc(var(--side-menu-gap) * -1);
       position: absolute;
@@ -75,7 +76,7 @@
         padding: 36px 0;
 
         li {
-          + li {
+          & + li {
             margin: 20px 0 0;
           }
 
@@ -108,6 +109,21 @@
 
         span:nth-child(2) {
           transform: rotate(calc(var(--angle) * -1));
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__wrapper {
+      li {
+        &:last-of-type a {
+          padding-right: 0;
+        }
+
+        a {
+          height: 100%;
+          padding-inline: 22px;
         }
       }
     }

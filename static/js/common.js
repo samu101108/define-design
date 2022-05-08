@@ -1,18 +1,20 @@
 (function () {
 
   const body   = $('body');
-  const header = $('header');
+  const header = $('#header');
 
   function isMenuVisible () {
-    return header.hasClass('opened-menu');
+    return header.hasClass('menu--opened');
   }
 
   function toggleMenuVisibility () {
     header.toggleClass('menu--opened');
+
+    body.toggleClass('no-scroll', isMenuVisible());
   }
 
-  function hasContext (selector, selector) {
-    return selector.closest(selector);
+  function hasContext (context, selector) {
+    return context.closest(selector).length;
   }
 
   $(document).ready(function () {
@@ -21,6 +23,9 @@
 
     // handle a global click
     $(document).on('click', function (e) {
+      if (isMenuVisible() && !hasContext($(e.target), '#header')) {
+        toggleMenuVisibility();
+      }
     });
   });
 

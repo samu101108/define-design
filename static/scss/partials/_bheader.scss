@@ -1,0 +1,76 @@
+
+.blackheader {
+  background-color: var(--black);
+  
+  &__wrapper {
+    @include contentLimit(1094px);
+    @include sizedBox(100%, var(--bheader-height));
+  }
+
+  &__socialmedia {
+    --height: 70px;
+    @include sizedBox(auto, var(--height));
+
+    .socialmedia-item {
+      @include sizedBox(40px);
+
+      figure {
+        @include sizedBox(23px);
+
+        img {
+          vertical-align: initial;
+        }
+      }
+    }
+  }
+
+  &__mainlinks {
+    .mainlinks {
+      height: 40px;
+
+      a {
+        padding-inline: 7px;
+        color: var(--white);
+        font: 700 1.6rem / 2.1rem "Manrope", sans-serif;
+      }
+    }
+  }
+
+  &__searchbox {
+    .searchbox {
+      height: 50px;
+
+      form {
+        input,
+        [type="submit"] {
+          height: 40px;
+        }
+
+        input {
+          font-size: 1.6rem;
+          color: var(--white);
+          background-color: transparent;
+
+          &,
+          &::placeholder,
+          &:-ms-input-placeholder,
+          &:-ms-input-placeholder {
+            color: var(--white);
+            opacity: 1;
+          }
+        }
+
+        [type="submit"] { 
+          width: 40px;
+          background: transparent url('../images/search-icon.svg') center / 23px no-repeat;
+        }
+      }
+    }
+  }
+
+  @media(min-width: 768px) {
+    &__socialmedia {
+      --height: auto;
+    }
+  }
+}

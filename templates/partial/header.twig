@@ -1,4 +1,6 @@
 
+{% include "partial/blackheader.twig" with { "classList": " d-none d-md-block" } %}
+
 <header class="header" id="header">
   {% block header %}
     <div class="header__wrapper position-relative d-flex align-items-center justify-content-between">
@@ -8,11 +10,13 @@
         </figure>
       </a>
 
-      <nav id="nav-main" class="navbar p-0 m-0" role="navigation">
+      <nav id="nav-main" class="navbar align-content-between align-items-md-center p-0 m-0" role="navigation">
         {% include "menu.twig" with {'items': menu.get_items} %}
+
+        {% include "partial/blackheader.twig" with { "classList": " w-100 d-md-none" } %}
       </nav>
 
-      <span class="hamburger d-flex flex-column align-items-center justify-content-center position-relative" id="hamburger">
+      <span class="hamburger d-md-none d-flex flex-column align-items-center justify-content-center position-relative" id="hamburger">
         <span class="d-block position-absolute"></span>
         <span class="d-block"></span>
         <span class="d-block position-absolute"></span>

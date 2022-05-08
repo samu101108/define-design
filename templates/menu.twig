@@ -1,9 +1,9 @@
 
 {% if menu %}
-	<ul class="m-0 h-100 w-100 d-flex flex-column">
+	<ul class="m-0 w-100 d-flex flex-column flex-md-row align-self-md-stretch p-md-0">
 		{% for item in items %}
 			<li>
-				<a target="{{ item.target }}" href="{{ item.link }}" class="d-block text-end">
+				<a target="{{ item.target }}" href="{{ item.link }}" class="d-block text-end d-md-flex align-items-md-center">
 					{{ item.title }}
 				</a>
 

@@ -2,10 +2,15 @@
 :root {
   // sizes
   --header-height: 70px;
+  --bheader-height: auto;
   --side-menu-gap: calc(100vw - 60px);
 
   // colors
   --white: #fff;
   --black: #000;
   --purple: #740083;
+
+  @media (min-width: 768px) {
+    --bheader-height: 60px;
+  }
 }
