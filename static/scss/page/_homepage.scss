@@ -1,11 +1,7 @@
 section.topo { 
-    .btn-outline-dark{
-        font-weight: 500;
-    }
     font-size: 1.8rem;
-    a{
-        font-size: 1.8rem;
-    }
+    .btn-outline-dark{ font-weight: 500; }
+    a { font-size: 1.8rem; }
     .esquerda{
         top: 50%;
         transform: translateY(-50%);
@@ -20,7 +16,14 @@ section.topo {
         }
     }
 }
-
+section.video {
+    background-color: #ededed;
+    background-image: url(../images/bg-video.svg);
+    background-position: center;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    padding: 25px 0 48px 0;
+}
 
 section.pessoas { 
     font-size: 1.8rem;
@@ -157,5 +160,11 @@ section.faq {
     }
     section.novidades .novidades-posts {
         background: none;
+    }
+    section.video {
+        background-image: url(../images/bg-video.svg);
+        background-position: 102% 0%;
+        background-size: 90%;
+        padding: 101px 0 143px 0;
     }
 }
