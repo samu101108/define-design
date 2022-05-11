@@ -1,2 +1,18 @@
 
+.contactform {
+  &__wrapper {
+    @include contentLimit(1094px);
+  }
 
+  &__title {
+    margin: 32px 0;
+
+    color: var(--black);
+    font: 700 2.8rem / 4rem "Poppins", sans-serif;
+  }
+
+  &__subtitle {
+    color: var(--black);
+    font: 400 1.8rem / 1.9rem "Poppins", sans-serif;
+  }
+}
