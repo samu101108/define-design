@@ -1,3 +1,30 @@
+section.topo { 
+    font-size: 1.8rem;
+    .btn-outline-dark{ font-weight: 500; }
+    a { font-size: 1.8rem; }
+    .esquerda{
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc(100% + 42px);
+    }
+    @media (min-width:768px){
+        .topo-conteudo{
+            margin-top: -50px;
+        }
+        .direita{
+            z-index: -1;
+        }
+    }
+}
+section.video {
+    background-color: #ededed;
+    background-image: url(../images/bg-video.svg);
+    background-position: center;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    padding: 25px 0 48px 0;
+}
+
 section.pessoas { 
     font-size: 1.8rem;
 }
@@ -58,8 +85,6 @@ section.marcas  {
         >figure {
             min-width: 222px;
             margin-right: 68px;
-            .marca-img {
-            }
         }
     }
 }
@@ -121,6 +146,9 @@ section.faq {
 }
 
 @media(min-width: 768px) {
+    // section.pessoas { 
+
+    // }
     section.qualidades .lista-qualidades {
         grid-template-columns: repeat(3, minmax(100px, 180px));
         gap: 70px;
@@ -130,5 +158,11 @@ section.faq {
     }
     section.novidades .novidades-posts {
         background: none;
+    }
+    section.video {
+        background-image: url(../images/bg-video.svg);
+        background-position: 102% 0%;
+        background-size: 90%;
+        padding: 101px 0 143px 0;
     }
 }
