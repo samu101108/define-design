@@ -4,12 +4,6 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
-  color: #000;
-  font-weight: 400;
-  line-height: 1.75;
-  font-family: 'Manrope', sans-serif;
-
   @media (max-width: 767px) {
     &.no-scroll {
       overflow: hidden;
@@ -20,6 +14,7 @@ body {
 .section-container {
   @include contentLimit(1180px);
   // lembrando que temos um mixin pra fazer isso sozinho, tá?
+  //-- Tá.
 }
 
 a:active {

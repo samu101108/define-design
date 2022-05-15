@@ -5,12 +5,13 @@
   "utils/reset",
   "utils/helpers",
   "utils/globals",
-  "utils/tipography";
+  "utils/typography";
 
 // partials files
-@import "partials/header";
-@import "partials/footer";
-@import "partials/bheader";
+@import 
+  "partials/header",
+  "partials/footer",
+  "partials/bheader";
 
 // pages files
 @import
