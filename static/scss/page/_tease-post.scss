@@ -1,0 +1,41 @@
+.blog {
+    .wrapper {
+        overflow: hidden;
+    }
+    .section-container {
+        time {
+            font-size: 12px;
+            font-weight: 300;
+        }
+        .titulo-post{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #000;
+        }
+        .thumb-deco {
+            position: relative;
+            figure {
+                max-width: 271px;
+                margin: 0 auto;
+                img {
+                    object-fit: cover;
+                    width: 271px;
+                    height: 271px;
+                }
+
+            }
+        }
+        .thumb-deco .telinha:after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 234px;
+            display: block;
+            border: 1px solid #000;
+            top: 92px;
+            left: 60px;
+            z-index: -1;
+        }
+    }
+}
