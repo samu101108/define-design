@@ -8,7 +8,7 @@
 					<h1 class="text-uppercase fs-1 mb-5">Nossas Novidades</h1>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row post-articles">
 				{% for post in posts %}
 					{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
 				{% endfor %}

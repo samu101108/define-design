@@ -1,14 +1,18 @@
 {% extends "tease.twig" %}
 
 {% block content %}
-	<div class="d-flex flex-column-reverse">
-		<h2 class="pt-0 pt-md-2 pb-4"><a class="text-decoration-none titulo-post" href="{{post.link}}">{{post.title}}</a></h2>
-		<p class="mb-md-0"><time pubdate>{{post.date}}</time></p>
+	<div class="d-flex flex-column-reverse ">
+		<div class="d-flex flex-column-reverse pt-0 pt-md-2 pb-4 text-box">
+			<h2><a class="text-decoration-none titulo-post" href="{{post.link}}">{{post.title}}</a></h2>
+			<p class="mb-md-0 lh-0"><time pubdate>{{post.date}}</time></p>
+		</div>
 		{% if post.thumbnail.src %}
 			<div class="thumb-deco mx-auto w-100">
 				<div class="telinha">
 					<figure class="mb-3">
-						<img class="img-fluid" width="271" height="271" src="{{post.thumbnail.src}}" />
+						<a href="{{post.link}}">
+							<img class="img-fluid" width="271" height="271" src="{{post.thumbnail.src}}" />
+						</a>
 					</figure>
 				</div>
 			</div>

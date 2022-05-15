@@ -1,11 +1,14 @@
 .blog {
-    .wrapper {
-        overflow: hidden;
-    }
+    .wrapper { overflow: hidden; }
     .section-container {
         time {
             font-size: 12px;
             font-weight: 300;
+            margin-bottom: 24px;
+        }
+        .text-box {
+            max-width: 314px;
+            margin: 0 auto;
         }
         .titulo-post{
             font-size: 18px;
@@ -15,27 +18,31 @@
         }
         .thumb-deco {
             position: relative;
+            margin-bottom: 30px;
             figure {
                 max-width: 271px;
-                margin: 0 auto;
+                margin: 0 auto 0 !important;
                 img {
                     object-fit: cover;
                     width: 271px;
                     height: 271px;
                 }
-
             }
         }
-        .thumb-deco .telinha:after {
-            content: "";
-            position: absolute;
-            width: 500px;
-            height: 234px;
-            display: block;
-            border: 1px solid #000;
-            top: 92px;
-            left: 60px;
-            z-index: -1;
+        .post-articles .tease-post{
+            &:nth-child(odd) .thumb-deco .telinha:after,
+            &:nth-child(even) .thumb-deco .telinha:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 94px;
+                width: 500px;
+                height: 234px;
+                border: 1px solid #000;
+                z-index: -1;
+            }
+            &:nth-child(odd) .thumb-deco .telinha:after { left: calc(50% - 77px); }
+            &:nth-child(even) .thumb-deco .telinha:after { right: calc(50% - 77px); }
         }
     }
 }
