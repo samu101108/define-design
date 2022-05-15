@@ -14,6 +14,42 @@
 						<p class="contactform__subtitle">
 							OU ENVIE SEU CURRICULO
 						</p>
+
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="faleconosco-tab" data-bs-toggle="tab" data-bs-target="#faleconosco" type="button" role="tab" aria-controls="faleconosco" aria-selected="true">
+									Fale Conosco
+								</button>
+							</li>
+
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="trabalheconosco-tab" data-bs-toggle="tab" data-bs-target="#trabalheconosco" type="button" role="tab" aria-controls="trabalheconosco" aria-selected="false">
+									Trabalhe Conosco
+								</button>
+							</li>
+						</ul>
+
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="faleconosco" role="tabpanel" aria-labelledby="faleconosco-tab">
+
+								<div id="faleconosco-form" class="contactform p-2">
+									{% filter shortcodes %}
+										[contact-form-7 id="5" title="Fale Conosco"]
+									{% endfilter %}
+								</div>
+
+							</div>
+
+							<div class="tab-pane fade" id="trabalheconosco" role="tabpanel" aria-labelledby="trabalheconosco-tab">
+
+								<div id="trabalheconosco-form" class="contactform p-2">
+									{% filter shortcodes %}
+										[contact-form-7 id="87" title="Trabalhe Conosco"]
+									{% endfilter %}
+								</div>
+
+							</div>
+						</div>
 					</div>
 				</div>
 

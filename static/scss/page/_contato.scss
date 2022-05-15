@@ -12,7 +12,29 @@
   }
 
   &__subtitle {
+    margin: 0 0 31px;
+
     color: var(--black);
-    font: 400 1.8rem / 1.9rem "Poppins", sans-serif;
+    font: 300 1.8rem / 1.9rem "Poppins", sans-serif;
+  }
+
+  .nav-tabs {
+    height: 48px;
+
+    li {
+      &,
+      button {
+        height: 100%;
+      }
+
+      button {
+        color: #000;
+        font: 300 1.6rem / 1.8rem "Poppins", sans-serif;
+  
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
   }
 }

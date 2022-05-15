@@ -65,6 +65,33 @@ class StarterSite extends Timber\Site {
 		add_filter( 'timber/twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+
+		add_filter('wpcf7_form_elements', function( $content ) {
+			$dom = new DOMDocument();
+			$dom->preserveWhiteSpace = false;
+			$dom->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'), LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+	
+			$xpath = new DomXPath($dom);
+			$spans = $xpath->query("//span[contains(@class, 'wpcf7-form-control-wrap')]" );
+	
+			foreach ( $spans as $span ) :
+					$children = $span->firstChild;
+					$span->parentNode->replaceChild( $children, $span );
+			endforeach;
+	
+			return $dom->saveHTML();
+		});
+
+		add_filter('wpcf7_form_elements', function ($content) {
+			$content = str_replace("type=\"url\"", "inputmode=\"url\" type=\"url\"", $content);
+			$content = str_replace("type=\"tel\"", "inputmode=\"numeric\" type=\"tel\" autocomplete=\"tel\"", $content);
+			$content = str_replace("type=\"email\"", "inputmode=\"email\" type=\"email\" autocomplete=\"email\"", $content);
+
+			return $content;
+		});
+
+		add_filter('wpcf7_autop_or_not', '__return_false');
+
 		parent::__construct();
 	}
 	/** This is where you can register custom post types. */
@@ -159,6 +186,7 @@ class StarterSite extends Timber\Site {
 	public function add_to_twig( $twig ) {
 		$twig->addExtension( new Twig\Extension\StringLoaderExtension() );
 		$twig->addFilter( new Twig\TwigFilter( 'myfoo', array( $this, 'myfoo' ) ) );
+
 		return $twig;
 	}
 
