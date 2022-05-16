@@ -17,6 +17,8 @@ body {
   //-- Tá.
 }
 
-a:active {
+a{
   color: var(--purple);
+  &:hover { color: darkmagenta; }
+  &:active { color: var(--purple); }
 }
