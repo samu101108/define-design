@@ -4,16 +4,31 @@
 	<div class="content-wrapper">
 		<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
 			<section class="article-content">
-				<figure class="featured-img pe-4 pb-4">
-					<img src="{{ post.thumbnail.src | resize(547, 547)}}">
-				</figure>
+				<div class="featured-img d-flex align-items-end pb-4" 
+				style="background-image: url('{{ post.thumbnail.src }}')">
+					<h1 class="article-h1 text-white px-xl-4 mb-md-5">{{ post.title }}</h1>
+				</div>
 				<div class="article-body">
-					<h1 class="article-h1">{{ post.title }}</h1>
 					<p class="blog-author">
-						<span>By</span><a href="{{post.author.path}}"> {{ post.author.name }} </a>
+						<span>Por</span><a href="{{post.author.path}}"> {{ post.author.name }} </a>
 						<span>&bull;</span> <time datetime="{{ post.date|date('Y-m-d H:i:s') }}">{{ post.date }}</time>
 					</p>
-					{{post.content}}
+					<div class="row">
+						<div class="col-lg-8 pe-0 pe-md-5">
+							<article>
+								{{post.content}}
+							</article>
+						</div>
+						<aside class="col-lg-4 w-25 border border-light bg-dark text-white ps-5 pe-4 d-none">
+							<div class="pt-4">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit suscipit cum, laboriosam vero 
+								sit minus saepe quasi consequatur alias? Commodi praesentium, vel eos quod ipsa non nemo architecto
+								deleniti, iusto omnis nesciunt ea, recusandae at unde voluptas qui beatae necessitatibus est
+								asperiores eveniet provident? Ab vitae aliquid consectetur ut deleniti ipsa natus neque 
+								reprehenderit?</p>
+							</div>
+						</aside>
+					</div>
 				</div>
 			</section>
 
