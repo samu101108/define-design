@@ -6,49 +6,61 @@
 			<section class="article-content">
 
 				<div class="contactform">
-					<div class="contactform__wrapper">
-						<h1 class="contactform__title">
-							ENTRE EM CONTATO COM NOSSA EQUIPE
-						</h1>
-
-						<p class="contactform__subtitle">
-							OU ENVIE SEU CURRICULO
-						</p>
-
-						<ul class="nav nav-tabs" id="myTab" role="tablist">
-							<li class="nav-item" role="presentation">
-								<button class="nav-link active" id="faleconosco-tab" data-bs-toggle="tab" data-bs-target="#faleconosco" type="button" role="tab" aria-controls="faleconosco" aria-selected="true">
-									Fale Conosco
-								</button>
-							</li>
-
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="trabalheconosco-tab" data-bs-toggle="tab" data-bs-target="#trabalheconosco" type="button" role="tab" aria-controls="trabalheconosco" aria-selected="false">
-									Trabalhe Conosco
-								</button>
-							</li>
-						</ul>
-
-						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade show active" id="faleconosco" role="tabpanel" aria-labelledby="faleconosco-tab">
-
-								<div id="faleconosco-form" class="contactform p-2">
-									{% filter shortcodes %}
-										[contact-form-7 id="5" title="Fale Conosco"]
-									{% endfilter %}
+					<div class="contactform__wrapper row g-0">
+						<div class="col-12 col-md-6">
+							<h1 class="contactform__title">
+								ENTRE EM CONTATO COM NOSSA EQUIPE
+							</h1>
+	
+							<p class="contactform__subtitle">
+								OU ENVIE SEU CURRICULO
+							</p>
+	
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button class="nav-link active" id="faleconosco-tab" data-bs-toggle="tab" data-bs-target="#faleconosco" type="button" role="tab" aria-controls="faleconosco" aria-selected="true">
+										Fale Conosco
+									</button>
+								</li>
+	
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="trabalheconosco-tab" data-bs-toggle="tab" data-bs-target="#trabalheconosco" type="button" role="tab" aria-controls="trabalheconosco" aria-selected="false">
+										Trabalhe Conosco
+									</button>
+								</li>
+							</ul>
+	
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="faleconosco" role="tabpanel" aria-labelledby="faleconosco-tab">
+	
+									<div id="faleconosco-form" class="contactform p-2">
+										{% filter shortcodes %}
+											[contact-form-7 id="5" title="Fale Conosco"]
+										{% endfilter %}
+									</div>
+	
 								</div>
-
-							</div>
-
-							<div class="tab-pane fade" id="trabalheconosco" role="tabpanel" aria-labelledby="trabalheconosco-tab">
-
-								<div id="trabalheconosco-form" class="contactform p-2">
-									{% filter shortcodes %}
-										[contact-form-7 id="87" title="Trabalhe Conosco"]
-									{% endfilter %}
+	
+								<div class="tab-pane fade" id="trabalheconosco" role="tabpanel" aria-labelledby="trabalheconosco-tab">
+	
+									<div id="trabalheconosco-form" class="contactform p-2">
+										{% filter shortcodes %}
+											[contact-form-7 id="87" title="Trabalhe Conosco"]
+										{% endfilter %}
+									</div>
+	
 								</div>
-
 							</div>
+						</div>
+
+						<div class="col-12 col-md-6 order-md-first d-flex flex-column">
+							<p class="contactform__lgpdtext order-md-last">
+								Em respeito à sua privacidade, a Define Design utilizará seus dados pessoais apenas para as finalidades indicadas no campo de preenchimento acima. Saiba mais sobre nossas políticas de  privacidade.
+							</p>
+
+							<figure class="contactform__nossaequipe">
+								<img src="{{ site.theme.link | relative }}/static/images/nossa-equipe.png" alt="nossa equipe" class="mw-100" />
+							</figure>
 						</div>
 					</div>
 				</div>
