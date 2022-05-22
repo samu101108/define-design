@@ -54,51 +54,68 @@
 					<h2 class="display-2 fw-bold text-uppercase">Na Define sua marca <br>ganha novos limites!</h2>
 					<p>Descubra o seu em nossas linhas de produtos</p>
 					<div class="masonry-container px-3 px-md-0">
-						<div class="masonry1">
-							<div class="inner-grid">
-								{% for marca in marcas %}
-									<div class="bg-warning"><a href="#"><img class="img-fluid img-grid" src="{{ marca.thumbnail.src }}" alt="{{marca.title}}" title="{{marca.title}}"></a></div>
-									<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="{{ marca.thumbnail.src }}" alt="{{marca.title}}" title="{{marca.title}}"></a></div>
-								{% endfor %}
-							</div>
-							<div class="inner-grid">
-								<div class="bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
-								<div class="bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
-							</div>
-							<div>
+						
+							{# {% set produtos = produtos | shuffle()  %} #}
+							
+							<div class="masonry1">
 								<div class="inner-grid">
-									<div class="bg-warning w-100">
-										<ul class="p-3 produtos">
-											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">Etiquetas</a></li>
-											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">tags de roupas</a></li>
-											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">chaveiros</a></li>
-											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">porta copos</a></li>
-											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">pulseiras</a></li>
-											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">projetos especiais</a></li>
-										</ul>
+									{% for item in [0,1] %}
+										{% set produto = produtos | slice(item, 1)  %}
+										{% set classes = loop.first ? "" : "d-none d-md-block" %}
+										{% include "/partial/quadradinho.twig" with { "produto" : produto | first, "classes" : classes } %}
+									{% endfor %}
+								</div>
+								<div class="inner-grid">
+									{% for item in [2,3] %}
+										{% set produto = produtos | slice(item, 1)  %}
+										{% include "/partial/quadradinho.twig" with { "produto" : produto | first, "classes" : "" } %}
+									{% endfor %}
+								</div>
+								<div>
+									<div class="inner-grid">
+										<div class=" w-100">
+											<ul class="p-3 produtos">
+												<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">Etiquetas</a></li>
+												<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">tags de roupas</a></li>
+												<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">chaveiros</a></li>
+												<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">porta copos</a></li>
+												<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">pulseiras</a></li>
+												<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">projetos especiais</a></li>
+											</ul>
+										</div>
+										{% include "/partial/quadradinho.twig" with { "produto" : produtos | slice(4,1) | first, "classes" : "d-none d-md-block" } %}
 									</div>
-									<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
 								</div>
 							</div>
-						</div>
-						<div class="masonry2">
-							<div class="topo">
-								<div class="esquerda">
-									<div class="bg-warning h-100"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/550/600"></a></div>
-									<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/550/600"></a></div>
+
+							<div class="masonry2">
+								<div class="topo">
+									<div class="esquerda">
+										{% for item in [5,6] %}
+											{% set produto = produtos | slice(item, 1)  %}
+											{% set classes = loop.first ? "h-100" : "d-none d-md-block" %}
+											{% include "/partial/quadradinho.twig" with { "produto" : produto | first, "classes" : classes } %}
+										{% endfor %}
+									</div>
+									<div class="direita">
+										{% for item in [7,8] %}
+											{% set produto = produtos | slice(item, 1)  %}
+											{% set classes = loop.first ? "h-100" : "d-none d-md-block" %}
+											{% include "/partial/quadradinho.twig" with { "produto" : produto | first, "classes" : classes } %}
+										{% endfor %}
+									</div>
 								</div>
-								<div class="direita">
-									<div class="bg-warning h-100"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
-									<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+								<div>
+									<div class="inner-grid">
+										{% for item in [9,10] %}
+											{% set produto = produtos | slice(item, 1)  %}
+											{% set classes = loop.first ? "" : "d-none d-md-block" %}
+											{% include "/partial/quadradinho.twig" with { "produto" : produto | first, "classes" : classes } %}
+										{% endfor %}
+									</div>
 								</div>
 							</div>
-							<div class="">
-								<div class="inner-grid">
-									<div><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
-									<div class="d-none d-md-block"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
-								</div>
-							</div>
-						</div>
+
 					</div>
 				</div>
 			</section>

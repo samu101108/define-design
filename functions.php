@@ -184,6 +184,18 @@ class StarterSite extends Timber\Site {
 	 * @param string $twig get extension.
 	 */
 	public function add_to_twig( $twig ) {
+
+		// $twig->addFilter( new Timber\Twig_Filter( 'shuffle', function ( $array ) {
+        // shuffle( $array );
+        // $newArray = [];
+
+        // foreach ( $array as $item ) {
+		// 		array_push( $newArray, $item );
+		// 	}
+
+		// 	return $newArray;
+		// } ) );
+
 		$twig->addExtension( new Twig\Extension\StringLoaderExtension() );
 		$twig->addFilter( new Twig\TwigFilter( 'myfoo', array( $this, 'myfoo' ) ) );
 

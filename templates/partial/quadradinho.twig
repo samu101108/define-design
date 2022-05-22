@@ -1,0 +1,6 @@
+{% if produto %}
+    <div class="{{ classes }}"><a href="{{produto.link}}"><img class="img-fluid img-grid" src="{{ produto.thumbnail.src }}" alt="{{produto.title}}" title="{{produto.title}}"></a></div>
+{% else %}
+    <div class="{{ classes }} bg-primary"><a href="{{produto.link}}"><img class="img-fluid img-grid" src="{{ produto.thumbnail.src }}" alt="{{produto.title}}" title="{{produto.title}}"></a></div>
+{% endif %}
+
