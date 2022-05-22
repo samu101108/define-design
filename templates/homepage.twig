@@ -56,8 +56,10 @@
 					<div class="masonry-container px-3 px-md-0">
 						<div class="masonry1">
 							<div class="inner-grid">
-								<div class="bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
-								<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+								{% for marca in marcas %}
+									<div class="bg-warning"><a href="#"><img class="img-fluid img-grid" src="{{ marca.thumbnail.src }}" alt="{{marca.title}}" title="{{marca.title}}"></a></div>
+									<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="{{ marca.thumbnail.src }}" alt="{{marca.title}}" title="{{marca.title}}"></a></div>
+								{% endfor %}
 							</div>
 							<div class="inner-grid">
 								<div class="bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
@@ -114,7 +116,7 @@
 							<p><strong>Somos uma empresa que nasceu da inovação.</strong></p>
 							<p>Desenvolvemos, criamos e produzimos peças emborrachadas personalizadas, com alta qualidade e precisão desde os mínimos detalhes.</p>
 							<p>Sabemos a importância e a responsabilidade de levar a marca do cliente em nossos produtos e, por isso, trabalhamos com uma equipe especializada e comprometida que mantém nossa essência de realizar um trabalho primoroso de pessoas para pessoas.</p>
-							<p>Por isso mantemos nossa essência de realizar um trabalho primoroso de pessoas para pessoas.</p>
+							<p>Mantemos nossa essência de realizar um trabalho primoroso de pessoas para pessoas.</p>
 						</div>
 					</div>
 					<div class="row g-0">
@@ -187,10 +189,10 @@
 
 			<section class="marcas">
 				<div class="section-container mx-auto">
-					<h2 class="display-2 fw-ligther pb-4 mb-2 text-md-center">MARCAS PARCEIRAS</h2>
-					<div class="slides-marca d-flex align-items-center">
+					<h2 class="display-2 fw-ligther pb-4 mb-2 mb-md-5 text-md-center">MARCAS PARCEIRAS</h2>
+					<div class="slides-marca d-flex align-items-center flex-md-wrap">
 						{% for marca in marcas %}
-							<figure class="mb-5">
+							<figure class="marca-box">
 								<img class="img-fluid marca-img" src="{{ marca.thumbnail.src }}" alt="{{marca.title}}" title="{{marca.title}}">
 							</figure>
 						{% endfor %}

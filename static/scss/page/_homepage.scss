@@ -262,4 +262,29 @@ section.faq {
             }
         }
     }
+    section.marcas  { 
+        font-size: 1.8rem;
+        background-color: #ededed;
+        padding-bottom: 44px;
+        .slides-marca {
+            overflow: initial;
+            >figure {
+                min-width: initial;
+                margin-right: 0;
+            }
+        }
+        .marca-box {
+            width: 235px;
+            height: 116px;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            align-items: center;
+            .marca-img {
+                width: 100% !important;
+                height: fit-content !important;
+            }
+        }
+    }
 }
