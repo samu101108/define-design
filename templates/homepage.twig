@@ -2,347 +2,392 @@
 
 {% block content %}
 	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<h1 class="article-h1">{{post.title}}</h1>
-				<div class="article-body">
-					{{post.content}}
+		<div class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+
+			<section class="topo py-5">
+				<div class="section-container mx-auto">
+					<h2 class="display-2 text-uppercase fw-bold mb-5 mb-md-0" >Aqui suas ideias <br>ganham formas</h2>
 					
-
-					<section class="topo py-5">
-						<div class="section-container mx-auto">
-							<h2 class="display-2 text-uppercase fw-bold mb-5 mb-md-0" >Aqui suas ideias <br>ganham formas</h2>
-							
-							<div class="row topo-conteudo" >
-								<div class="col-md-3 d-flex flex-column justify-content-center pe-md-5">
-									<p class="mb-3 pb-3">Somos a Define Design de Produtos, uma 
-									industria especializada na criação de 
-									peças 
-									emborrachadas para os mercados de 
-									Calçados, Moda e Promocionais. Aqui as 
-									suas ideias ganham forma.
-									</p>
-									<div class="text-center mt-4 mb-5">
-										<a  class="btn btn-outline-dark" href="/contato">Entre em contato</a>
-									</div>
-								</div>
-
-								<div class="col-md-9 ps-md-5">
-									<div class="row g-0">	
-										<figure class="col-3 mb-0 position-relative">
-											<img class="position-absolute esquerda" src="{{site.link}}/wp-content/uploads/2022/05/topo-esque.jpg" alt="">
-										</figure>
-										<figure class="col-9 mb-0 d-flex justify-content-end">
-											<img class="img-fluid direita" src="{{site.link}}/wp-content/uploads/2022/05/topo-direi.jpg" alt="">
-										</figure>
-									</div>
-								</div>	 
+					<div class="row topo-conteudo" >
+						<div class="col-md-3 d-flex flex-column justify-content-center pe-md-5">
+							<p class="mb-3 pb-3">Somos a Define Design de Produtos, uma 
+							industria especializada na criação de 
+							peças 
+							emborrachadas para os mercados de 
+							Calçados, Moda e Promocionais. Aqui as 
+							suas ideias ganham forma.
+							</p>
+							<div class="text-center mt-4 mb-5">
+								<a  class="btn btn-outline-dark" href="/contato">Entre em contato</a>
 							</div>
 						</div>
-					</section>
 
-					<section class="video">
-						<div class="section-container mx-auto">
-							<h2 class="display-2 fw-bold text-uppercase mb-0">Instuticional</h2>
-							<div class="video-thumb">                                 
-								<!-- YouTube -->
-								<a data-fancybox="video-gallery" href="https://youtu.be/WxzEs6NjXcw">
-									<img class="img-fluid d-block d-md-none" src="{{site.link}}/wp-content/uploads/2022/05/video-mobile.jpg">
-									<img class="img-fluid d-none d-md-block" src="{{site.link}}/wp-content/uploads/2022/05/video-desktop.jpg">
-								</a>
+						<div class="col-md-9 ps-md-5">
+							<div class="row g-0">	
+								<figure class="col-3 mb-0 position-relative">
+									<img class="position-absolute esquerda" src="{{site.link}}/wp-content/uploads/2022/05/topo-esque.jpg" alt="">
+								</figure>
+								<figure class="col-9 mb-0 d-flex justify-content-end">
+									<img class="img-fluid direita" src="{{site.link}}/wp-content/uploads/2022/05/topo-direi.jpg" alt="">
+								</figure>
 							</div>
-						</div>
-					</section>
-
-					<section class="pessoas py-5">
-						<div class="section-container mx-auto p-0">
-							<h2 class="display-2 fw-bold">SOMOS FEITOS <br>DE PESSOAS</h2>
-							<div class="row g-0">
-								<div class="col-md-6">
-									<figure class="mb-4 mb-md-0">
-										<img class="img-fluid" src="{{site.link}}/wp-content/uploads/2022/05/pessoas1.jpg" alt="">
-									</figure>
-								</div>
-								<div class="col-md-6 px-4">
-									<p><strong>Somos uma empresa que nasceu da inovação.</strong></p>
-									<p>Desenvolvemos, criamos e produzimos peças emborrachadas personalizadas, com alta qualidade e precisão desde os mínimos detalhes.</p>
-									<p>Sabemos a importância e a responsabilidade de levar a marca do cliente em nossos produtos e, por isso, trabalhamos com uma equipe especializada e comprometida que mantém nossa essência de realizar um trabalho primoroso de pessoas para pessoas.</p>
-									<p>Por isso mantemos nossa essência de realizar um trabalho primoroso de pessoas para pessoas.</p>
-								</div>
-							</div>
-							<div class="row g-0">
-								<div class="col-md-6">
-									<figure class="mb-4 mb-md-0">
-										<img class="img-fluid" src="{{site.link}}/wp-content/uploads/2022/05/pessoas2.jpg" alt="">
-									</figure>
-								</div>
-								<div class="col-md-6 order-md-first text-md-end px-4">
-									<p>Contamos com uma estrutura verticalizada, possibilitando a busca constante por novas soluções, recriando processos e garantindo padrões de qualidade exigentes de grandes marcas do país.</p>
-									<p>E assim seguimos conquistando novos espaços e nos permitindo inovar ultrapassando os nossos próprios limites para transformar um pedido em case de sucesso.</p>
-									<p>Na Define suas ideias ganham formas. Descubra a sua!</p>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section class="qualidades py-5">
-						<div class="section-container mx-auto">
-							<hr class="w-75 w-md-50 mx-auto mb-5">
-							<h2 class="display-4 fw-lighter text-uppercase text-center mb-5">Só a Define Design tem</h2>
-							<ul class="lista-qualidades p-0">
-								<li class="d-flex flex-column">
-									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-entrega.svg" alt=""></figure>
-									<p class="small text-center lh-sm">Entrega para <br>todo Brasil</p>
-								</li>
-								<li class="d-flex flex-column">
-									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-camisa.svg" alt=""></figure>
-									<p class="small text-center lh-sm">Produtos com alta personalização</p>
-								</li>
-								<li class="d-flex flex-column">
-									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-lampada.svg" alt=""></figure>
-									<p class="small text-center lh-sm">Criatividade e tendência de mercado</p>
-								</li>
-								<li class="d-flex flex-column">
-									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-tag.svg" alt=""></figure>
-									<p class="small text-center lh-sm">Amostra grátis para avaliação</p>
-								</li>
-								<li class="d-flex flex-column">
-									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-precisao.svg" alt=""></figure>
-									<p class="small text-center lh-sm">Perfeccionismo e precisão no acabamento</p>
-								</li>
-								<li class="d-flex flex-column">
-									<figure class="text-center"><img src="{{theme.link}}/static/images/icon-reciclagem.svg" alt=""></figure>
-									<p class="small text-center lh-sm">Conscientização e sustentabilidade</p>
-								</li>
-							</ul>
-						</div>
-					</section>
-
-					<section class="depoimentos py-5">
-						<div class="section-container mx-auto">
-							<h2 class="display-2 fw-ligther pb-4 mb-2 text-md-center">O QUE FALAM DA GENTE</h2>
-							<div class="slides-depoimento">
-								{% for depoimento in depoimentos %}
-									<div class="slide-depoimento mt-md-5">
-										<div class="slide-conteudo border mb-5 p-4 mx-auto">
-											<p class="pb-5 mb-3 fw-lighter">{{ depoimento.depoimento }}</p>
-											<div class="pessoa">
-												<span class="nome fw-bold">{{ depoimento.nome }}</span> - 
-												<span class="profissao fw-bold">{{ depoimento.profissao }}</span> <br>
-												<span class="empresa text-uppercase fw-bold">{{ depoimento.empresa }}</span>
-											</div>
-										</div>
-									</div>
-								{% endfor %}
-							</div>
-						</div>
-					</section>
-
-					<section class="marcas">
-						<div class="section-container mx-auto">
-							<h2 class="display-2 fw-ligther pb-4 mb-2 text-md-center">MARCAS PARCEIRAS</h2>
-							<div class="slides-marca d-flex align-items-center">
-								{% for marca in marcas %}
-									<figure class="mb-5">
-										<img class="img-fluid marca-img" src="{{ marca.thumbnail.src }}" alt="{{marca.title}}" title="{{marca.title}}">
-									</figure>
-								{% endfor %}
-							</div>
-						</div>
-					</section>
-
-					<section class="novidades py-5">
-						<div class="section-container mx-auto">
-							<h2 class="display-2 fw-bold">NOVIDADES DEFINE</h2>
-							<p class="pb-3">Acompanhe as novidades, tendências, <br>lançamentos e tudo sobre o mercado</p>
-							<div class="novidades-posts row pt-3 pb-4">
-							{% for post in posts %}
-								<div class="col-md-6">
-									<a class="d-block post-link text-decoration-none" href="{{post.link}}">
-										<h3 class="post-title text-white fw-normal text-end p-4 mb-0">{{ post.title }}</h3>
-										<img class="post-thumb" src="{{ post.thumbnail.src | resize(300, 300)}}">
-									</a>
-								</div>
-							{% endfor %}
-							</div>
-							<div class="text-center mt-4">
-								<a  class="btn btn-outline-dark" href="/blog">VER TODAS AS NOVIDADES</a>
-							</div>
-						</div>
-					</section>
-
-					<section class="apresentacao py-5">
-						<div class="section-container mx-auto">
-							<div class="row g-0 text-center align-items-md-center">
-								<hr class="w-75 w-md-50 mx-auto mb-5">
-								<div class="col-md-6">
-									<h2 class="display-2 text-md-start">
-										BAIXE NOSSA <br> 
-										APRESENTAÇÃO
-									</h2>
-								 </div>
-								<div class="col-md-6">
-									<figure class="icon-apresentacao mx-auto my-5">
-										<img src="{{theme.link}}/static/images/icon-apresentacao.svg" class="img-fluid" alt="">
-									</figure>
-									<a target="_blank" href="/wp-content/uploads/2022/05/apresentacao_define_design.pdf" class="btn btn-outline-dark">BAIXAR APRESENTAÇÃO</a>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section class="faq py-5">
-						<div class="section-container mx-auto">
-							<h2 class="display-2 text-uppercase pb-3">Dúvidas frequentes</h2>
-
-							<div class="accordion accordion-flush" id="accordionExample">
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="orcamento">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-										Como faço um orçamento?
-									</button>
-									</h2>
-									<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="orcamento" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											Só precisa nos mandar a sua logo vetorizada (PDF, COREL, PHOTOSHOP), as medidas e quantidade desejada, pode nos mandar por e-mail ou whatsapp.
-										</div>
-									</div>
-								</div>
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="tempo-orcamento">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										Em quanto tempo recebo o meu orçamento?
-									</button>
-									</h2>
-									<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="tempo-orcamento" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											Em até 02(dois) dias úteis após a solicitação do orçamento.
-										</div>
-									</div>
-								</div>
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="arte-orcamento">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-										Preciso ter a arte do projeto para realizar o orçamento?
-									</button>
-									</h2>
-									<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="arte-orcamento" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											Não, você só precisa nos fornecer sua logo e o modelo que deseja e nós já conseguimos fazer um desenvolvimento para a aprovação.
-										</div>
-									</div>
-								</div>
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="quantidade-min">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-										Possui quantidade mínima?
-									</button>
-									</h2>
-									<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="quantidade-min" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											Nosso processo de precificação depende muito do projeto, quanto maior a quantidade, menor o valor.
-										</div>
-									</div>
-								</div>
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="fazer-arte">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-										Se eu não tiver a arte, vocês fazem?
-									</button>
-									</h2>
-									<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="fazer-arte" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											Se você tiver uma ideia de como quer a etiqueta você pode nos passar e te ajudamos nessa! Lembrando que não criamos marca, apenas a arte para a etiqueta.
-										</div>
-									</div>
-								</div>
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="pagamento">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-										Como funciona o pagamento?
-									</button>
-									</h2>
-									<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="pagamento" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											Você tem duas opções de quitação do valor do pedido:
-											<ul>
-												<li>
-													<p><strong>Opção 1: Pagamento do valor total</strong></p>
-													<ul>
-														<li>Você realiza o pagamento do valor total do pedido, as formas de pagamento desta opção
-														são: Cartão de crédito, Boleto bancário ou Depósito.</li>
-													</ul>
-												</li>
-												<li class="mt-5">
-													<p><strong>Opção 2: Pagamento do sinal e do restante</strong></p>
-													<ul>
-														<li>Você realiza o pagamento do sinal (50% do valor total) e assim que o pedido for finalizado e
-														estiver pronto para entrega, você realiza o pagamento do valor restante (50% do valor total).
-														As formas de pagamento desta opção são: Boleto bancário ou Depósito.</li>
-													</ul>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="prazo">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsSeven" aria-expanded="false" aria-controls="collapseThree">
-										Qual é o prazo de produção?
-									</button>
-									</h2>
-									<div id="collapsSeven" class="accordion-collapse collapse" aria-labelledby="prazo" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											E????????
-										</div>
-									</div>
-								</div>
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="material">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
-										Qual é o material usado nos produtos ?
-									</button>
-									</h2>
-									<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="material" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											O material usado em nossos produtos é o PVC, o que os tornam muito mais resistentes que os outros materiais. Nossos produtos são resistentes ao tempo, água, sol, não desbotam, não quebram e não arranham. Durabilidade e qualidade são nossos principais diferenciais.
-										</div>
-									</div>
-								</div>
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="horario">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
-										Qual é o horário de atendimento ?
-									</button>
-									</h2>
-									<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="horario" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											Nosso horário de atendimento é de Segunda-feira à Sexta-feira de 07:30 am às 17:30pm.
-										</div>
-									</div>
-								</div>
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="contato">
-									<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
-										Quais são as formas de contato?
-									</button>
-									</h2>
-									<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="contato" data-bs-parent="#accordionExample">
-										<div class="accordion-body fw-lighter">
-											<ul>
-												<li><strong>Instagram:</strong> <a class="text-dark text-decoration-none" target="_blank" href="https://www.instagram.com/definedesign___">definedesign___</a></li>
-												<li><strong>E-mail:</strong> <a class="text-dark text-decoration-none" class="text-white small text-decoration-none ps-2" href="mailto:marketing@definedesign.com.br">marketing@definedesign.com.br</a></li>
-												<li><strong>Telefone:</strong> <a class="text-dark text-decoration-none" target="_blank" href="https://wa.me/5581998623822">81 99862-3822</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
+						</div>	 
+					</div>
 				</div>
 			</section>
-		</article>
+
+			<section class="video">
+				<div class="section-container mx-auto">
+					<h2 class="display-2 fw-bold text-uppercase mb-0">Instuticional</h2>
+					<div class="video-thumb">                                 
+						<!-- YouTube -->
+						<a data-fancybox="video-gallery" href="https://youtu.be/WxzEs6NjXcw">
+							<img class="img-fluid d-block d-md-none" src="{{site.link}}/wp-content/uploads/2022/05/video-mobile.jpg">
+							<img class="img-fluid d-none d-md-block" src="{{site.link}}/wp-content/uploads/2022/05/video-desktop.jpg">
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="sua-marca py-5 g-4 bg-light">
+				<div class="section-container mx-auto p-0">
+					<h2 class="display-2 fw-bold text-uppercase">Na Define sua marca <br>ganha novos limites!</h2>
+					<p>Descubra o seu em nossas linhas de produtos</p>
+					<div class="masonry-container px-3 px-md-0">
+						<div class="masonry1">
+							<div class="inner-grid">
+								<div class="bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+								<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+							</div>
+							<div class="inner-grid">
+								<div class="bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+								<div class="bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+							</div>
+							<div>
+								<div class="inner-grid">
+									<div class="bg-warning w-100">
+										<ul class="p-3 produtos">
+											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">Etiquetas</a></li>
+											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">tags de roupas</a></li>
+											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">chaveiros</a></li>
+											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">porta copos</a></li>
+											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">pulseiras</a></li>
+											<li><a class="text-uppercase text-decoration-none text-dark fw-bolder" href="#">projetos especiais</a></li>
+										</ul>
+									</div>
+									<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="masonry2">
+							<div class="topo">
+								<div class="esquerda">
+									<div class="bg-warning h-100"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/550/600"></a></div>
+									<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/550/600"></a></div>
+								</div>
+								<div class="direita">
+									<div class="bg-warning h-100"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+									<div class="d-none d-md-block bg-warning"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+								</div>
+							</div>
+							<div class="">
+								<div class="inner-grid">
+									<div><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+									<div class="d-none d-md-block"><a href="#"><img class="img-fluid img-grid" src="https://placekitten.com/350/400"></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pessoas py-5">
+				<div class="section-container mx-auto p-0">
+					<h2 class="display-2 fw-bold">SOMOS FEITOS <br>DE PESSOAS</h2>
+					<div class="row g-0">
+						<div class="col-md-6">
+							<figure class="mb-4 mb-md-0">
+								<img class="img-fluid" src="{{site.link}}/wp-content/uploads/2022/05/pessoas1.jpg" alt="">
+							</figure>
+						</div>
+						<div class="col-md-6 px-4">
+							<p><strong>Somos uma empresa que nasceu da inovação.</strong></p>
+							<p>Desenvolvemos, criamos e produzimos peças emborrachadas personalizadas, com alta qualidade e precisão desde os mínimos detalhes.</p>
+							<p>Sabemos a importância e a responsabilidade de levar a marca do cliente em nossos produtos e, por isso, trabalhamos com uma equipe especializada e comprometida que mantém nossa essência de realizar um trabalho primoroso de pessoas para pessoas.</p>
+							<p>Por isso mantemos nossa essência de realizar um trabalho primoroso de pessoas para pessoas.</p>
+						</div>
+					</div>
+					<div class="row g-0">
+						<div class="col-md-6">
+							<figure class="mb-4 mb-md-0">
+								<img class="img-fluid" src="{{site.link}}/wp-content/uploads/2022/05/pessoas2.jpg" alt="">
+							</figure>
+						</div>
+						<div class="col-md-6 order-md-first text-md-end px-4">
+							<p>Contamos com uma estrutura verticalizada, possibilitando a busca constante por novas soluções, recriando processos e garantindo padrões de qualidade exigentes de grandes marcas do país.</p>
+							<p>E assim seguimos conquistando novos espaços e nos permitindo inovar ultrapassando os nossos próprios limites para transformar um pedido em case de sucesso.</p>
+							<p>Na Define suas ideias ganham formas. Descubra a sua!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="qualidades py-5">
+				<div class="section-container mx-auto">
+					<hr class="w-75 w-md-50 mx-auto mb-5">
+					<h2 class="display-4 fw-lighter text-uppercase text-center mb-5">Só a Define Design tem</h2>
+					<ul class="lista-qualidades p-0">
+						<li class="d-flex flex-column">
+							<figure class="text-center"><img src="{{theme.link}}/static/images/icon-entrega.svg" alt=""></figure>
+							<p class="small text-center lh-sm">Entrega para <br>todo Brasil</p>
+						</li>
+						<li class="d-flex flex-column">
+							<figure class="text-center"><img src="{{theme.link}}/static/images/icon-camisa.svg" alt=""></figure>
+							<p class="small text-center lh-sm">Produtos com alta personalização</p>
+						</li>
+						<li class="d-flex flex-column">
+							<figure class="text-center"><img src="{{theme.link}}/static/images/icon-lampada.svg" alt=""></figure>
+							<p class="small text-center lh-sm">Criatividade e tendência de mercado</p>
+						</li>
+						<li class="d-flex flex-column">
+							<figure class="text-center"><img src="{{theme.link}}/static/images/icon-tag.svg" alt=""></figure>
+							<p class="small text-center lh-sm">Amostra grátis para avaliação</p>
+						</li>
+						<li class="d-flex flex-column">
+							<figure class="text-center"><img src="{{theme.link}}/static/images/icon-precisao.svg" alt=""></figure>
+							<p class="small text-center lh-sm">Perfeccionismo e precisão no acabamento</p>
+						</li>
+						<li class="d-flex flex-column">
+							<figure class="text-center"><img src="{{theme.link}}/static/images/icon-reciclagem.svg" alt=""></figure>
+							<p class="small text-center lh-sm">Conscientização e sustentabilidade</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="depoimentos py-5">
+				<div class="section-container mx-auto">
+					<h2 class="display-2 fw-ligther pb-4 mb-2 text-md-center">O QUE FALAM DA GENTE</h2>
+					<div class="slides-depoimento">
+						{% for depoimento in depoimentos %}
+							<div class="slide-depoimento mt-md-5">
+								<div class="slide-conteudo border mb-5 p-4 mx-auto">
+									<p class="pb-5 mb-3 fw-lighter">{{ depoimento.depoimento }}</p>
+									<div class="pessoa">
+										<span class="nome fw-bold">{{ depoimento.nome }}</span> - 
+										<span class="profissao fw-bold">{{ depoimento.profissao }}</span> <br>
+										<span class="empresa text-uppercase fw-bold">{{ depoimento.empresa }}</span>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</section>
+
+			<section class="marcas">
+				<div class="section-container mx-auto">
+					<h2 class="display-2 fw-ligther pb-4 mb-2 text-md-center">MARCAS PARCEIRAS</h2>
+					<div class="slides-marca d-flex align-items-center">
+						{% for marca in marcas %}
+							<figure class="mb-5">
+								<img class="img-fluid marca-img" src="{{ marca.thumbnail.src }}" alt="{{marca.title}}" title="{{marca.title}}">
+							</figure>
+						{% endfor %}
+					</div>
+				</div>
+			</section>
+
+			<section class="novidades py-5">
+				<div class="section-container mx-auto">
+					<h2 class="display-2 fw-bold">NOVIDADES DEFINE</h2>
+					<p class="pb-3">Acompanhe as novidades, tendências, <br>lançamentos e tudo sobre o mercado</p>
+					<div class="novidades-posts row pt-3 pb-4">
+					{% for post in posts %}
+						<div class="col-md-6">
+							<a class="d-block post-link text-decoration-none" href="{{post.link}}">
+								<h3 class="post-title text-white fw-normal text-end p-4 mb-0">{{ post.title }}</h3>
+								<img class="post-thumb" src="{{ post.thumbnail.src | resize(300, 300)}}">
+							</a>
+						</div>
+					{% endfor %}
+					</div>
+					<div class="text-center mt-4">
+						<a  class="btn btn-outline-dark" href="/blog">VER TODAS AS NOVIDADES</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="apresentacao py-5">
+				<div class="section-container mx-auto">
+					<div class="row g-0 text-center align-items-md-center">
+						<hr class="w-75 w-md-50 mx-auto mb-5">
+						<div class="col-md-6">
+							<h2 class="display-2 text-md-start">
+								BAIXE NOSSA <br> 
+								APRESENTAÇÃO
+							</h2>
+							</div>
+						<div class="col-md-6">
+							<figure class="icon-apresentacao mx-auto my-5">
+								<img src="{{theme.link}}/static/images/icon-apresentacao.svg" class="img-fluid" alt="">
+							</figure>
+							<a target="_blank" href="/wp-content/uploads/2022/05/apresentacao_define_design.pdf" class="btn btn-outline-dark">BAIXAR APRESENTAÇÃO</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="faq py-5">
+				<div class="section-container mx-auto">
+					<h2 class="display-2 text-uppercase pb-3">Dúvidas frequentes</h2>
+
+					<div class="accordion accordion-flush" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="orcamento">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Como faço um orçamento?
+							</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="orcamento" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									Só precisa nos mandar a sua logo vetorizada (PDF, COREL, PHOTOSHOP), as medidas e quantidade desejada, pode nos mandar por e-mail ou whatsapp.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="tempo-orcamento">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Em quanto tempo recebo o meu orçamento?
+							</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="tempo-orcamento" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									Em até 02(dois) dias úteis após a solicitação do orçamento.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="arte-orcamento">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Preciso ter a arte do projeto para realizar o orçamento?
+							</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="arte-orcamento" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									Não, você só precisa nos fornecer sua logo e o modelo que deseja e nós já conseguimos fazer um desenvolvimento para a aprovação.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="quantidade-min">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+								Possui quantidade mínima?
+							</button>
+							</h2>
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="quantidade-min" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									Nosso processo de precificação depende muito do projeto, quanto maior a quantidade, menor o valor.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="fazer-arte">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+								Se eu não tiver a arte, vocês fazem?
+							</button>
+							</h2>
+							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="fazer-arte" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									Se você tiver uma ideia de como quer a etiqueta você pode nos passar e te ajudamos nessa! Lembrando que não criamos marca, apenas a arte para a etiqueta.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="pagamento">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+								Como funciona o pagamento?
+							</button>
+							</h2>
+							<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="pagamento" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									Você tem duas opções de quitação do valor do pedido:
+									<ul>
+										<li>
+											<p><strong>Opção 1: Pagamento do valor total</strong></p>
+											<ul>
+												<li>Você realiza o pagamento do valor total do pedido, as formas de pagamento desta opção
+												são: Cartão de crédito, Boleto bancário ou Depósito.</li>
+											</ul>
+										</li>
+										<li class="mt-5">
+											<p><strong>Opção 2: Pagamento do sinal e do restante</strong></p>
+											<ul>
+												<li>Você realiza o pagamento do sinal (50% do valor total) e assim que o pedido for finalizado e
+												estiver pronto para entrega, você realiza o pagamento do valor restante (50% do valor total).
+												As formas de pagamento desta opção são: Boleto bancário ou Depósito.</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="prazo">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsSeven" aria-expanded="false" aria-controls="collapseThree">
+								Qual é o prazo de produção?
+							</button>
+							</h2>
+							<div id="collapsSeven" class="accordion-collapse collapse" aria-labelledby="prazo" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									E????????
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="material">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+								Qual é o material usado nos produtos ?
+							</button>
+							</h2>
+							<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="material" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									O material usado em nossos produtos é o PVC, o que os tornam muito mais resistentes que os outros materiais. Nossos produtos são resistentes ao tempo, água, sol, não desbotam, não quebram e não arranham. Durabilidade e qualidade são nossos principais diferenciais.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="horario">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+								Qual é o horário de atendimento ?
+							</button>
+							</h2>
+							<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="horario" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									Nosso horário de atendimento é de Segunda-feira à Sexta-feira de 07:30 am às 17:30pm.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="contato">
+							<button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+								Quais são as formas de contato?
+							</button>
+							</h2>
+							<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="contato" data-bs-parent="#accordionExample">
+								<div class="accordion-body fw-lighter">
+									<ul>
+										<li><strong>Instagram:</strong> <a class="text-dark text-decoration-none" target="_blank" href="https://www.instagram.com/definedesign___">definedesign___</a></li>
+										<li><strong>E-mail:</strong> <a class="text-dark text-decoration-none" class="text-white small text-decoration-none ps-2" href="mailto:marketing@definedesign.com.br">marketing@definedesign.com.br</a></li>
+										<li><strong>Telefone:</strong> <a class="text-dark text-decoration-none" target="_blank" href="https://wa.me/5581998623822">81 99862-3822</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+		</div>
 	</div><!-- /content-wrapper -->
 {% endblock %}

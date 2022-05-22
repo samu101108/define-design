@@ -41,7 +41,7 @@
                 border: 1px solid #000;
                 z-index: -1;
             }
-            &:nth-child(odd) .thumb-deco .telinha:after { left: calc(50% - 77px); }
+            &:nth-child(odd) .thumb-deco .telinha:after { left: calc(50% - 27px); }
             &:nth-child(even) .thumb-deco .telinha:after { right: calc(50% - 77px); }
         }
     }

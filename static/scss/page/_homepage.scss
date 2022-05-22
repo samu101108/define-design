@@ -24,7 +24,55 @@ section.video {
     background-repeat: no-repeat;
     padding: 25px 0 48px 0;
 }
-
+section.sua-marca {
+    .masonry-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        .img-grid {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .inner-grid {
+            display: flex;
+            gap: 8px;
+            height: 100%;
+        }
+        .masonry1 {
+            display: grid;
+            grid-template-rows: 168px 101px 130px;
+            gap: 8px;
+            .produtos {
+                li { line-height: 1.5rem;}
+                a { font-size: 14px; }
+            }
+            .inner-grid {
+                > div:nth-child(1) {
+                    flex-basis: 100%;
+                }
+                > div:nth-child(2) {
+                    flex-basis: 100%;
+                }
+            }
+        }
+        .masonry2 {
+            display: grid;
+            grid-template-rows: 278px 130px;
+            gap: 8px;
+            .topo {
+                display: grid;
+                grid-template-rows: 100px 168px;
+                gap: 8px;
+            }
+            .inner-grid {
+                > div:nth-child(1) {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}
 section.pessoas { 
     font-size: 1.8rem;
 }
@@ -164,5 +212,54 @@ section.faq {
         background-position: 102% 0%;
         background-size: 90%;
         padding: 101px 0 143px 0;
+    }
+    section.sua-marca {
+        .masonry-container {
+            grid-template-columns: minmax(100px, 639px) minmax(100px, 483px);
+            gap: 15px;
+            .inner-grid {
+                gap: 15px;
+                > div {
+                    width: 50%;
+                    flex-basis: 50%;
+                }
+            }
+            .masonry1 {
+                grid-template-rows: 311px 208px 311px;
+                gap: 15px;
+                .produtos {
+                    li { line-height: 2.5rem;}
+                    a { font-size: 18px;}
+                }
+            }
+            .masonry2 {
+                grid-template-rows: 534px 311px;
+                gap: 15px;
+                .topo {
+                    display: grid;
+                    grid-template-columns: minmax(100px, 157px) minmax(100px, 311px);
+                    gap: 15px;
+                    .esquerda{
+                        display: grid;
+                        grid-auto-rows: 311px 208px;
+                        gap: 15px
+                    }
+                    .direita{
+                        display: grid;
+                        grid-auto-rows: 208px 311px;
+                        gap: 15px
+                    }
+                }
+                .inner-grid {
+                    gap: 15px;
+                    > div:nth-child(1) {
+                        flex-basis: 311px;
+                    }
+                    > div:nth-child(2) {
+                        flex-basis: 157px;
+                    }
+                }
+            }
+        }
     }
 }

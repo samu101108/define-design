@@ -1,5 +1,6 @@
+.gitignore
 vendor
 wp-content
 composer.lock
-main.min.css
-main.min.css.map
+static/css/main.min.css
+static/css/main.min.css.map

@@ -1,13 +1,19 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="content-wrapper">
+	<div class="content-wrapper section-container my-5">
+		<div class="row justify-content-center justify-content-md-space-between">
 		{% for produto in produtos %}
-			{{produto.title}} <br>
-			<img src="{{produto.thumbnail }}" style="width: 200px;" alt=""> <br>
-			{{produto.content}}
-			<a href="{{ post.link }}">{{produto.title}}</a> <br>
+			<div class="col-sm-6 col-md-4 col-lg-3">
+				<div class="d-flex flex-column align-items-center">
+					<a href="{{ produto.link }}"><img src="{{produto.thumbnail }}" style="width: 200px;" alt=""></a> <br>
+					<a href="{{ produto.link }}">{{produto.title}}</a> <br>
+
+					{{ post.meta('descricao_do_produto') }}
+					{{produto.descricao_do_produto}}
+				</div>
+			</div>
 		{% endfor %}
-		Estou no template produtos
+		</div>
 	</div><!-- /content-wrapper -->
 {% endblock %}
