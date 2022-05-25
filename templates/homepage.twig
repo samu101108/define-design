@@ -237,6 +237,25 @@
 				</div>
 			</section>
 
+			<section class="originais py-5">
+				<div class="section-container mx-auto">
+					<h2 class="display-2 fw-bold">ORIGINAIS DEFINE</h2>
+						<div class="slides-originais">
+							{% for original in originais %}
+								<div class="col-md-6">
+									<a class="d-block post-link text-decoration-none" href="{{original.link}}">
+										<h3 class="post-title fw-normal text-end p-4 mb-0">{{ original.title }}</h3>
+										<img class="post-thumb" src="{{ original.thumbnail.src | resize(300, 300)}}">
+									</a>
+								</div>
+							{% endfor %}
+						</div>
+					<div class="text-center mt-4">
+						<a  class="btn btn-outline-dark" href="/originais-define">CONHEÇA OS ORIGINAIS</a>
+					</div>
+				</div>
+			</section>
+
 			<section class="apresentacao py-5">
 				<div class="section-container mx-auto">
 					<div class="row g-0 text-center align-items-md-center">

@@ -13,3 +13,13 @@ $('.slides-depoimento').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 }) 
+
+$('.slides-originais').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  autoplay: true,
+  speed: 350,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+}) 

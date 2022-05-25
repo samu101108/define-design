@@ -37,6 +37,14 @@ $args = array(
 $context['produtos'] = new Timber\PostQuery($args);
 //End - Contexto e Query dos  posts produtos
 
+// Contexto e Query dos posts original
+$args = array(
+   'post_type' => 'original',
+   'posts_per_page' => 3,
+);
+$context['originais'] = new Timber\PostQuery($args);
+//End - Contexto e Query dos posts original
+
 
 $timber_post     = new Timber\Post();
 $context['post'] = $timber_post;
