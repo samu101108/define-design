@@ -137,6 +137,25 @@ section.marcas  {
         }
     }
 }
+section.originais  { 
+    background-color: #ededed;
+    padding-bottom: 44px;
+    a { font-size: 1.8rem; }
+    .slides-originais{
+        max-height: 230px;
+        .post-link { 
+            .post-thumb {
+                object-fit: cover;
+                height: 230px;
+                width: 100%;
+            }
+        }
+        .slick-dots {
+            bottom: -35px;
+        }
+    }
+}
+
 section.novidades { 
     font-size: 1.8rem;
     .novidades-posts {
@@ -154,6 +173,7 @@ section.novidades {
             position: absolute;
             bottom: 0;
             z-index: 1;
+            width: 100%;
         }
         .post-thumb {
             aspect-ratio: 16 / 9;
@@ -285,6 +305,14 @@ section.faq {
             .marca-img {
                 width: 100% !important;
                 height: fit-content !important;
+            }
+        }
+    }
+    section.originais { 
+        .slides-originais {
+            max-height: 516px;
+            .post-thumb {
+                max-height: 516px;
             }
         }
     }

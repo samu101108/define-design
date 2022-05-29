@@ -14,11 +14,17 @@ body {
 .section-container {
   @include contentLimit(1180px);
   // lembrando que temos um mixin pra fazer isso sozinho, tá?
-  //-- Tá.
+  //-- Tá, mas eu não entendi porque você não usou o Bootstrap.
 }
 
 a {
   color: var(--purple);
   &:hover { color: darkmagenta; }
   &:active { color: var(--purple); }
+}
+
+.btn-outline-dark {
+  min-width: 230px;
+  padding: 10px 16px;
+  height: 49px;
 }

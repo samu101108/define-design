@@ -18,17 +18,17 @@
 							suas ideias ganham forma.
 							</p>
 							<div class="text-center mt-4 mb-5">
-								<a  class="btn btn-outline-dark" href="/contato">Entre em contato</a>
+								<a  class="btn btn-outline-dark text-uppercase" href="/contato">Entre em contato</a>
 							</div>
 						</div>
 
 						<div class="col-md-9 ps-md-5">
 							<div class="row g-0">	
 								<figure class="col-3 mb-0 position-relative">
-									<img class="position-absolute esquerda" src="{{site.link}}/wp-content/uploads/2022/05/topo-esque.jpg" alt="">
+									<img class="position-absolute esquerda" src="/wp-content/themes/definedesign/static/images/detalhe_costas_mulher_roupa_com_tag.webp" alt="">
 								</figure>
 								<figure class="col-9 mb-0 d-flex justify-content-end">
-									<img class="img-fluid direita" src="{{site.link}}/wp-content/uploads/2022/05/topo-direi.jpg" alt="">
+									<img class="img-fluid direita" src="/wp-content/themes/definedesign/static/images/homem_usando_camisa_com_tag.webp" alt="">
 								</figure>
 							</div>
 						</div>	 
@@ -41,7 +41,7 @@
 					<h2 class="display-2 fw-bold text-uppercase mb-0">Instuticional</h2>
 					<div class="video-thumb">                                 
 						<!-- YouTube -->
-						<a data-fancybox="video-gallery" href="https://youtu.be/WxzEs6NjXcw">
+						<a data-fancybox="video-gallery" href="https://youtu.be/ipD1TFdSm-g">
 							<img class="img-fluid d-block d-md-none" src="{{site.link}}/wp-content/uploads/2022/05/video-mobile.jpg">
 							<img class="img-fluid d-none d-md-block" src="{{site.link}}/wp-content/uploads/2022/05/video-desktop.jpg">
 						</a>
@@ -126,7 +126,7 @@
 					<div class="row g-0">
 						<div class="col-md-6">
 							<figure class="mb-4 mb-md-0">
-								<img class="img-fluid" src="{{site.link}}/wp-content/uploads/2022/05/pessoas1.jpg" alt="">
+								<img class="img-fluid" src="{{site.link}}/wp-content/themes/definedesign/static/images/nossa-equipe.webp" alt="">
 							</figure>
 						</div>
 						<div class="col-md-6 px-4">
@@ -139,7 +139,7 @@
 					<div class="row g-0">
 						<div class="col-md-6">
 							<figure class="mb-4 mb-md-0">
-								<img class="img-fluid" src="{{site.link}}/wp-content/uploads/2022/05/pessoas2.jpg" alt="">
+								<img class="img-fluid" src="{{site.link}}/wp-content/themes/definedesign/static/images/metodo-de-producao-define-design.webp" alt="">
 							</figure>
 						</div>
 						<div class="col-md-6 order-md-first text-md-end px-4">
@@ -217,26 +217,6 @@
 				</div>
 			</section>
 
-			<section class="novidades py-5">
-				<div class="section-container mx-auto">
-					<h2 class="display-2 fw-bold">NOVIDADES DEFINE</h2>
-					<p class="pb-3">Acompanhe as novidades, tendências, <br>lançamentos e tudo sobre o mercado</p>
-					<div class="novidades-posts row pt-3 pb-4">
-					{% for post in posts %}
-						<div class="col-md-6">
-							<a class="d-block post-link text-decoration-none" href="{{post.link}}">
-								<h3 class="post-title text-white fw-normal text-end p-4 mb-0">{{ post.title }}</h3>
-								<img class="post-thumb" src="{{ post.thumbnail.src | resize(300, 300)}}">
-							</a>
-						</div>
-					{% endfor %}
-					</div>
-					<div class="text-center mt-4">
-						<a  class="btn btn-outline-dark" href="/blog">VER TODAS AS NOVIDADES</a>
-					</div>
-				</div>
-			</section>
-
 			<section class="originais py-5">
 				<div class="section-container mx-auto">
 					<h2 class="display-2 fw-bold">ORIGINAIS DEFINE</h2>
@@ -244,13 +224,13 @@
 							{% for original in originais %}
 								<div class="col-md-6">
 									<a class="d-block post-link text-decoration-none" href="{{original.link}}">
-										<h3 class="post-title fw-normal text-end p-4 mb-0">{{ original.title }}</h3>
+										{# <h3 class="post-title fw-normal text-end p-4 mb-0">{{ original.title }}</h3> #}
 										<img class="post-thumb" src="{{ original.thumbnail.src | resize(300, 300)}}">
 									</a>
 								</div>
 							{% endfor %}
 						</div>
-					<div class="text-center mt-4">
+					<div class="text-center pt-5 mt-5">
 						<a  class="btn btn-outline-dark" href="/originais-define">CONHEÇA OS ORIGINAIS</a>
 					</div>
 				</div>
@@ -271,6 +251,46 @@
 								<img src="{{theme.link}}/static/images/icon-apresentacao.svg" class="img-fluid" alt="">
 							</figure>
 							<a target="_blank" href="/wp-content/uploads/2022/05/apresentacao_define_design.pdf" class="btn btn-outline-dark">BAIXAR APRESENTAÇÃO</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="novidades py-5">
+				<div class="section-container mx-auto">
+					<h2 class="display-2 fw-bold">NOVIDADES DEFINE</h2>
+					<p class="pb-3">Acompanhe as novidades, tendências, <br>lançamentos e tudo sobre o mercado</p>
+					<div class="novidades-posts row pt-3 pb-4">
+					{% for post in posts %}
+						<div class="col-md-6">
+							<a class="d-block post-link text-decoration-none" href="{{post.link}}">
+								<h3 class="post-title text-white fw-normal text-end p-4 mb-0">{{ post.title }}</h3>
+								<img class="post-thumb" src="{{ post.thumbnail.src | resize(300, 300)}}">
+							</a>
+						</div>
+					{% endfor %}
+					</div>
+					<div class="text-center mt-4">
+						<a  class="btn btn-outline-dark" href="/blog">VER TODAS AS NOVIDADES</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="apresentacao catalogo py-5">
+				<div class="section-container mx-auto">
+					<div class="row g-0 text-center align-items-md-center">
+						<hr class="w-75 w-md-50 mx-auto mb-5">
+						<div class="col-md-6">
+							<h2 class="display-2 text-md-start">
+								BAIXE NOSSO <br>
+								CATÁLOGO
+							</h2>
+							</div>
+						<div class="col-md-6">
+							<figure class="icon-apresentacao mx-auto my-5">
+								<img src="{{theme.link}}/static/images/icon-apresentacao.svg" class="img-fluid" alt="">
+							</figure>
+							<a target="_blank" href="/wp-content/uploads/2022/05/Catalogo_Define.pdf" class="btn btn-outline-dark">BAIXAR CATÁLOGO</a>
 						</div>
 					</div>
 				</div>
@@ -378,7 +398,7 @@
 							</h2>
 							<div id="collapsSeven" class="accordion-collapse collapse" aria-labelledby="prazo" data-bs-parent="#accordionExample">
 								<div class="accordion-body fw-lighter">
-									E????????
+									30 dias úteis.
 								</div>
 							</div>
 						</div>
