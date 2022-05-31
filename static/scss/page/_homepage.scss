@@ -311,8 +311,8 @@ section.faq {
     section.originais { 
         .slides-originais {
             max-height: 516px;
-            .post-thumb {
-                max-height: 516px;
+            .post-link .post-thumb {
+                height: 516px;
             }
         }
     }

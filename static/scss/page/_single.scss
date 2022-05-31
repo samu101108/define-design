@@ -2,17 +2,23 @@
     font-size: 1.8rem;
     // @include contentLimit(1180px);
     // --xPadding: 15px;
+    
+    p { line-height: 2.35rem; }
+
     img { @include sizedBox(100%, auto); }
+
     .featured-img {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
+        object-fit: cover;
         @include sizedBox(100%, 390px);
         @include contentLimit(1180px);
         --xPadding: 15px;
         .article-h1 {
             font-size: 28px;
+            line-height: 40px;
             position: relative;
             z-index: 2;
         }
@@ -32,6 +38,10 @@
         --xPadding: 15px;
     }
     @media(min-width: 768px) {
+
+        .article-h1 {
+            font-size: 39px;
+        }
         .featured-img {
             .article-h1 {
                 font-size: 39px;
@@ -42,6 +52,10 @@
             margin-top: -81px;
             z-index: 2;
         }
-
+            .featured-img {
+                float: left;
+                max-width: 547px !important
+            }
     }
+        
 }
