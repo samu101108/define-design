@@ -1,0 +1,35 @@
+
+body.search-results {
+
+  #content {
+    @include contentLimit(1094px) {
+      --yPadding: 35px;
+    };
+
+    h1 {
+      color: var(--black);
+      font: 700 2.4rem "Poppins", sans-serif;
+    }
+  }
+
+  .content-wrapper {
+    
+  }
+
+  .tease {
+    &__wrapper {}
+
+    &__thumbnail {
+      max-width: 375px;
+    }
+
+    &__details {
+      color: var(--black);
+    }
+
+    &__title {
+      font: 500 1.8rem "Poppins", sans-serif;
+    }
+  }
+
+}
