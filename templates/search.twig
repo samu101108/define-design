@@ -5,7 +5,8 @@
   {# see `base.twig:27` for where this block's content will be inserted #}
   <div class="content-wrapper row g-0">
     {% for post in posts %}
-      {% include 'tease.twig' %}
+      {# {% include 'tease.twig' %} #}
+      {% include 'tease_search.twig' %}
     {% endfor %}
 
     {% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
