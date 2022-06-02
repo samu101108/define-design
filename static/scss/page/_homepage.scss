@@ -25,6 +25,11 @@ section.video {
     padding: 25px 0 48px 0;
 }
 section.sua-marca {
+    background-color: #ededed;
+    background-image: url(../images/bg-sua-marca.svg);
+    background-position: left center;
+    background-size: 96%;
+    background-repeat: no-repeat;
     .masonry-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
