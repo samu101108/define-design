@@ -3,7 +3,7 @@
   background-color: var(--black);
   
   &__wrapper {
-    @include contentLimit(1094px);
+    @include contentLimit(1180px);
     @include sizedBox(100%, var(--bheader-height));
   }
 
@@ -31,7 +31,7 @@
       a {
         padding-inline: 7px;
         color: var(--white);
-        font: 700 1.6rem / 2.1rem "Manrope", sans-serif;
+        font: 700 1.4rem / 2.1rem "Manrope", sans-serif;
       }
     }
   }
@@ -47,7 +47,7 @@
         }
 
         input {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           color: var(--white);
           background-color: transparent;
 

@@ -5,7 +5,7 @@
   &__wrapper {
     z-index: 1;
     @include sizedBox(100%);
-    @include contentLimit(1094px);
+    @include contentLimit(1180px);
 
     --xPadding: 15px;
 
@@ -20,7 +20,7 @@
         color: var(--black);
         text-decoration: none;
         text-transform: uppercase;
-        font: 700 1.8rem / 2.4rem "Manrope", sans-serif;
+        font: 700 1.4rem / 2.4rem "Manrope", sans-serif;
       }
     }
 
