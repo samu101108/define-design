@@ -228,11 +228,13 @@ section.faq {
     section.novidades .novidades-posts {
         background: none;
     }
+
     section.video {
         background-image: url(../images/bg-video.svg);
-        background-position: 102% 0%;
-        background-size: 90%;
+        /* background-position: 102% 60%; */
+        background-size: 95%;
         padding: 101px 0 143px 0;
+        background-position: center;
     }
     section.sua-marca {
         .masonry-container {
