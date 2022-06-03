@@ -17,10 +17,21 @@
       z-index: 20;
 
       a {
+        position: relative;
         color: var(--black);
         text-decoration: none;
         text-transform: uppercase;
         font: 700 1.4rem / 2.4rem "Manrope", sans-serif;
+        &:hover:after {
+          content: "";
+          position: absolute;
+          background: purple;
+          width: 49px;
+          height: 3px;
+          bottom: -3px;
+          left: calc(50% - 25px);
+          border-radius: 3px;
+        }
       }
     }
 

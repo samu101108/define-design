@@ -29,9 +29,20 @@
       height: 40px;
 
       a {
+        position: relative;
         padding-inline: 7px;
         color: var(--white);
         font: 700 1.4rem / 2.1rem "Manrope", sans-serif;
+        &:hover:after {
+          content: "";
+          position: absolute;
+          background: purple;
+          width: 49px;
+          height: 3px;
+          bottom: -3px;
+          left: calc(50% - 25px);
+          border-radius: 3px;
+        }
       }
     }
   }
