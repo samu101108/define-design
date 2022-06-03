@@ -36,6 +36,15 @@ body.search-results {
     &__title {
       font: 500 1.8rem "Poppins", sans-serif;
     }
+
+    &__type {
+      padding: 5px 4px;
+
+      color: #fff;
+      text-transform: uppercase;
+      font: 300 1.4rem / 1.2 "Poppins", sans-serif;
+      background-color: transparentize($color: #000000, $amount: .6);
+    }
   }
 
 }
