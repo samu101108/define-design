@@ -95,6 +95,18 @@
         }
       }
     }
+    &__searchbox {
+      .searchbox {
+        form {
+          input {
+            width: 130px;
+          }
+        
+        }
+      
+      }
+    }
+
     .menu-pesquisa {
     width: 100%;
     }
