@@ -220,16 +220,22 @@ section.faq {
 }
 
 @media(min-width: 768px) {
-    // section.pessoas { 
 
-    // }
     section.qualidades .lista-qualidades {
         grid-template-columns: repeat(3, minmax(100px, 180px));
         gap: 70px;
     }
-    section.depoimentos .slides-depoimento .slide-depoimento .slide-conteudo {
-        max-width: 705px;
+    section.sua-marca {
+        padding: 44px 0 60px 0;
     }
+    section.pessoas {
+        padding: 60px 0 44px 0;
+    }
+    section.depoimentos {
+        padding: 60px 0 44px 0;
+        .slides-depoimento .slide-depoimento .slide-conteudo {
+        max-width: 705px;
+    }}
     section.novidades .novidades-posts {
         background: none;
     }
@@ -238,7 +244,7 @@ section.faq {
         background-image: url(../images/bg-video.svg);
         /* background-position: 102% 60%; */
         background-size: 95%;
-        padding: 101px 0 143px 0;
+        padding: 80px 0 64px 0;
         background-position: center;
     }
     section.sua-marca {
@@ -293,7 +299,7 @@ section.faq {
     section.marcas  { 
         font-size: 1.8rem;
         background-color: #ededed;
-        padding-bottom: 44px;
+        padding: 54px 0 80px 0;
         .slides-marca {
             overflow: initial;
             >figure {
@@ -316,11 +322,19 @@ section.faq {
         }
     }
     section.originais { 
+        padding-bottom: 60px;
         .slides-originais {
             max-height: 516px;
             .post-link .post-thumb {
                 height: 516px;
             }
         }
+    }
+    .apresentacao,
+    .catalogo {
+        padding: 60px 0 80px 0 !important;
+    }
+    #duvidas-frenquentes {
+        padding: 60px 0 102px 0;
     }
 }

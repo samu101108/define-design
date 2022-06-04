@@ -74,6 +74,25 @@
   }
 
   @media (max-width: 767px) {
+    .menus-principais {
+      ul li {
+        margin: 2px 0 !important;
+        a {
+          display: block !important;
+          padding: 8px 15px;
+        }
+      }
+    }
+    .menu-top {
+      padding-top: 56px;
+      margin-bottom: 0;
+      text-align: right;
+      display: flex;
+      li {
+        width: 100%;
+      }
+    }
+
     .navbar {
       top: 0;
       right: calc(var(--side-menu-gap) * -1);
@@ -127,15 +146,23 @@
 
   @media (min-width: 768px) {
     &__wrapper {
+      #nav-main {
+        justify-content: flex-start;
+        width: 100%;
+        div {
+          width: 100%;
+        }
+      }
+      .logo{
+        // height: 100% important;
+        // padding-inline: 22px important;
+        min-width: 308px !important;
+      }
       li {
         &:last-of-type a {
           padding-right: 0;
         }
 
-        a {
-          height: 100%;
-          padding-inline: 22px;
-        }
       }
     }
   }

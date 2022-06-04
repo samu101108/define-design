@@ -10,7 +10,7 @@
   &__socialmedia {
     --height: 70px;
     @include sizedBox(auto, var(--height));
-
+    
     .socialmedia-item {
       @include sizedBox(40px);
 
@@ -82,6 +82,21 @@
   @media(min-width: 768px) {
     &__socialmedia {
       --height: auto;
+      min-width: 308px;
+    }
+    &__mainlinks {
+      width: 100%;
+      .mainlinks {
+        width: 100%;
+        ul {
+          width: 100%;  
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .menu-pesquisa {
+    width: 100%;
     }
   }
 }

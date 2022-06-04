@@ -10,7 +10,7 @@
 			</div>
 			<div class="row post-articles">
 				{% for post in posts %}
-					{% include ['tease.twig'] %}
+					{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
 				{% endfor %}
 			</div>
 		</div>

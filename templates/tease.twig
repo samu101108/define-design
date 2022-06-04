@@ -1,24 +1,9 @@
-
-<article class="col-12 col-sm-6 tease tease-{{post.post_type}} p-2" id="tease-{{post.ID}}">
+<article class="col-md-6 tease tease-{{post.post_type}}" id="tease-{{post.ID}}">
 	{% block content %}
-		<a href="{{ post.link }}" title="Acessar {{ post.title }}" class="d-block text-decoration-none">
-			<div class="tease__wrapper d-flex flex-column align-items-center">
-				{% if post.thumbnail.src %}
-					<figure class="tease__thumbnail m-0">
-						<img src="{{ post.thumbnail.src }}" alt="{{post.title}}" class="w-100" />
-					</figure>
-				{% endif %}
-
-				<div class="tease__details w-100 py-3">
-					<h2 class="tease__title text-center m-0">
-						{{ post.title }}
-					</h2>
-
-					<p class="m-0">
-						{{ post.preview }}
-					</p>
-				</div>
-			</div>
-		</a>
+		<h2 class="h2"><a href="{{post.link}}">{{post.title}}</a></h2>
+		<p>{{post.preview}}</p>
+		{% if post.get_thumbnail %}
+			<img src="{{post.thumbnail.src}}" />
+		{% endif %}
 	{% endblock %}
 </article>

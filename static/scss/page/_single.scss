@@ -13,6 +13,7 @@
         background-repeat: no-repeat;
         position: relative;
         object-fit: cover;
+        object-position: top;
         @include sizedBox(100%, 390px);
         @include contentLimit(1180px);
         --xPadding: 15px;

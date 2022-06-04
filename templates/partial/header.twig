@@ -11,7 +11,39 @@
       </a>
 
       <nav id="nav-main" class="navbar align-content-between align-items-md-center p-0 m-0" role="navigation">
-        {% include "menu.twig" with {'items': menu.get_items} %}
+        
+      <div class="menus-principais w-100 d-block d-md-none">
+        <!--De HOME a FALE CONOSCO no mobile-->
+        <ul class="menu-top d-flex d-md-none flex-column align-items-end w-100">
+          <li>
+            <a href="{{site.link}}/" class="d-flex align-items-center h-100 text-decoration-none">
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="{{site.link}}/#institucional" class="d-flex align-items-center h-100 text-decoration-none">
+              INSTITUCIONAL
+            </a>
+          </li>
+          <li>
+            <a href="{{site.link}}/#duvidas-frenquentes" class="d-flex align-items-center h-100 text-decoration-none">
+              DÚVIDAS FREQUENTES
+            </a>
+          </li>
+          <li>
+            <a href="{{site.link}}/contato" class="d-flex align-items-center h-100 text-decoration-none">
+              FALE CONOSCO
+            </a>
+          </li>
+        </ul>
+        <!--/ De HOME a FALE CONOSCO no mobile -->
+        {# {% include "partial/blackheader.twig" with { "classList": " w-100 d-md-none" } %} #}
+        {% include "menu.twig" with {'items': menu.get_items,  "classList": " w-100 d-md-none" } %}
+      </div>        
+
+        <div class="d-none d-md-block">
+          {% include "menu.twig" with {'items': menu.get_items} %}
+        </div>
 
         {% include "partial/blackheader.twig" with { "classList": " w-100 d-md-none" } %}
       </nav>

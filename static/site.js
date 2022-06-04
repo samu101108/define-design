@@ -15,7 +15,7 @@ $('.slides-depoimento').slick({
 }) 
 
 $('.slides-originais').slick({
-  dots: true,
+  dots: false,
   arrows: false,
   infinite: true,
   autoplay: true,
